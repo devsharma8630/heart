@@ -1,2360 +1,1146 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hi">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Meri Banogi Kya ❤️ | Cinematic Love Story</title>
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Meri Banogi Kya ❤️</title>
 <style>
-
-
-/* ===============================
-   RESET
-================================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--pink:#ff6b9d;--rose:#ff4081;--purple:#9c27b0;--deep-purple:#4a0080;
+--blue:#1a237e;--sky:#3f51b5;--gold:#ffd700;--soft-gold:#ffecb3;
+--white:#fff;--glow-pink:rgba(255,107,157,0.6);--glow-gold:rgba(255,215,0,0.5);
 }
-
-
-/* ===============================
-   BODY - CINEMATIC NIGHT
-================================= */
-
+html{scroll-behavior:smooth;}
 body{
-
-    width:100%;
-    height:100vh;
-
-    overflow:hidden;
-
-    background:
-        radial-gradient(
-            circle at top,
-            #27346b 0%,
-            #070b24 35%,
-            #01020d 80%,
-            #000000 100%
-        );
-
+background:#020010;color:#fff;font-family:'Georgia',serif;
+overflow-x:hidden;cursor:none;min-height:100vh;
 }
-
-
-/* ===============================
-   MAIN SCENE
-================================= */
-
-.scene{
-
-    width:100%;
-    height:100vh;
-
-    position:relative;
-
-    overflow:hidden;
-
+#custom-cursor{
+position:fixed;width:20px;height:20px;pointer-events:none;z-index:99999;
+transform:translate(-50%,-50%);transition:transform 0.1s;
 }
-
-
-/* ===============================
-   DEEP SPACE GLOW
-================================= */
-
-
-.space-glow{
-
-    position:absolute;
-
-    width:900px;
-    height:900px;
-
-    top:-300px;
-    left:50%;
-
-    transform:translateX(-50%);
-
-
-    background:
-    radial-gradient(
-        circle,
-        rgba(120,140,255,.35),
-        transparent 70%
-    );
-
-
-    filter:blur(80px);
-
-    animation:
-    glowMove 12s ease-in-out infinite;
-
+#custom-cursor::before{
+content:'❤';font-size:18px;color:var(--pink);
+filter:drop-shadow(0 0 6px var(--pink));animation:cursorPulse 1s infinite;
 }
+@keyframes cursorPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.3);}}
 
-
-@keyframes glowMove{
-
-
-    0%,100%{
-
-        transform:
-        translateX(-50%)
-        scale(1);
-
-    }
-
-
-    50%{
-
-        transform:
-        translateX(-50%)
-        scale(1.2);
-
-    }
-
-}
-
-
-
-/* ===============================
-   MAGIC NEBULA CLOUDS
-================================= */
-
-
-.nebula{
-
-
-    position:absolute;
-
-
-    width:600px;
-    height:350px;
-
-
-    border-radius:50%;
-
-
-    filter:blur(90px);
-
-
-    animation:
-    floatNebula 15s infinite alternate;
-
-}
-
-
-
-/* Blue Nebula */
-
-.nebula.one{
-
-    top:100px;
-    left:10%;
-
-
-    background:
-    rgba(80,120,255,.30);
-
-}
-
-
-
-/* Pink Nebula */
-
-
-.nebula.two{
-
-    top:250px;
-    right:10%;
-
-
-    background:
-    rgba(255,80,180,.25);
-
-}
-
-
-
-/* Purple Nebula */
-
-
-.nebula.three{
-
-    bottom:120px;
-    left:35%;
-
-
-    background:
-    rgba(170,90,255,.20);
-
-}
-
-
-@keyframes floatNebula{
-
-
-    from{
-
-        transform:
-        translateY(0)
-        scale(1);
-
-    }
-
-
-    to{
-
-
-        transform:
-        translateY(-40px)
-        scale(1.1);
-
-    }
-
-}
-
-
-
-/* ===============================
-   GROUND DARK GRADIENT
-================================= */
-
-
-.horizon{
-
-
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-    height:35%;
-
-
-    background:
-    linear-gradient(
-        to top,
-        #000000,
-        transparent
-    );
-
-
-    z-index:2;
-
-}
-/* ===============================
-   ULTRA HD GLOWING MOON
-================================= */
-
-.moon{
-
-    position:absolute;
-
-    top:70px;
-    right:120px;
-
-    width:180px;
-    height:180px;
-
-    border-radius:50%;
-
-    background:
-    radial-gradient(
-        circle at 35% 35%,
-        #ffffff,
-        #f5f5f5 40%,
-        #d9d9d9 75%,
-        #bbbbbb
-    );
-
-    box-shadow:
-        0 0 60px white,
-        0 0 140px #7ec8ff,
-        0 0 250px #4488ff;
-
-    animation:
-        moonPulse 5s ease-in-out infinite;
-
-    z-index:3;
-}
-
-
-/* Moon Craters */
-
-.moon::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:35px;
-    height:35px;
-
-    top:45px;
-    left:45px;
-
-    border-radius:50%;
-
-    background:rgba(170,170,170,.4);
-
-    box-shadow:
-        55px 25px 0 rgba(180,180,180,.3),
-        25px 80px 0 rgba(150,150,150,.3),
-        85px 65px 0 rgba(180,180,180,.25);
-}
-
-
-
-@keyframes moonPulse{
-
-    0%,100%{
-
-        transform:scale(1);
-
-    }
-
-    50%{
-
-        transform:scale(1.08);
-
-    }
-
-}
-
-
-/* ===============================
-   TWINKLING STARS
-================================= */
-
-
-.star{
-
-    position:absolute;
-
-    background:white;
-
-    border-radius:50%;
-
-    box-shadow:
-        0 0 10px white;
-
-    animation:
-        twinkle 2.5s infinite;
-}
-
-
-@keyframes twinkle{
-
-    0%,100%{
-
-        opacity:.2;
-
-        transform:scale(.4);
-
-    }
-
-
-    50%{
-
-        opacity:1;
-
-        transform:scale(1.7);
-
-    }
-
-}
-
-
-
-/* ===============================
-   SHOOTING STAR
-================================= */
-
-
-.shooting-star{
-
-    position:absolute;
-
-    width:160px;
-    height:3px;
-
-    background:
-    linear-gradient(
-        to right,
-        white,
-        transparent
-    );
-
-    border-radius:50px;
-
-    transform:rotate(-25deg);
-
-    filter:
-        drop-shadow(0 0 15px white);
-
-    animation:
-        shoot 5s linear infinite;
-
-    opacity:0;
-
-}
-
-
-
-@keyframes shoot{
-
-
-    0%{
-
-        top:-10%;
-        left:120%;
-
-        opacity:0;
-
-    }
-
-
-    10%{
-
-        opacity:1;
-
-    }
-
-
-    35%{
-
-        top:45%;
-        left:55%;
-
-        opacity:1;
-
-    }
-
-
-    50%,100%{
-
-        top:80%;
-        left:-20%;
-
-        opacity:0;
-
-    }
-
-}
-
-
-
-/* ===============================
-   MOBILE MOON
-================================= */
-
-
-@media(max-width:700px){
-
-
-    .moon{
-
-        width:100px;
-        height:100px;
-
-        right:30px;
-
-    }
-
-
-    .moon::before{
-
-        transform:scale(.6);
-
-        top:20px;
-        left:20px;
-
-    }
-
-
-    .shooting-star{
-
-        width:80px;
-
-    }
-
-}
-
-/* ===============================
-   CINEMATIC MOUNTAINS
-================================= */
-
-.mountains{
-
-    position:absolute;
-
-    bottom:22%;
-
-    width:100%;
-    height:250px;
-
-    z-index:3;
-
-}
-
-
-/* Mountain Layer 1 */
-
-.mountain1{
-
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-    height:220px;
-
-    background:
-        linear-gradient(
-            to top,
-            #050505,
-            #141428
-        );
-
-    clip-path:
-        polygon(
-            0% 100%,
-            0% 60%,
-            10% 35%,
-            20% 65%,
-            35% 25%,
-            50% 70%,
-            65% 20%,
-            80% 60%,
-            90% 40%,
-            100% 70%,
-            100% 100%
-        );
-}
-
-
-/* Mountain Layer 2 */
-
-.mountain2{
-
-    position:absolute;
-
-    bottom:20px;
-
-    width:100%;
-    height:180px;
-
-    background:
-        linear-gradient(
-            to top,
-            #000000,
-            #202040
-        );
-
-    opacity:.75;
-
-    clip-path:
-        polygon(
-            0% 100%,
-            0% 80%,
-            15% 40%,
-            25% 65%,
-            45% 30%,
-            55% 70%,
-            75% 35%,
-            90% 70%,
-            100% 50%,
-            100% 100%
-        );
-}
-
-
-
-/* ===============================
-   MAGICAL LAKE
-================================= */
-
-
-.lake{
-
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-
-    height:25%;
-
-    z-index:2;
-
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(60,100,255,.35),
-            #000814 70%
-        );
-
-    overflow:hidden;
-
-}
-
-
-/* Moon Reflection */
-
-.lake::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:50%;
-
-    width:180px;
-
-    height:100%;
-
-    transform:
-        translateX(-50%);
-
-    background:
-        linear-gradient(
-            rgba(255,255,255,.5),
-            transparent
-        );
-
-    filter:
-        blur(35px);
-
-    animation:
-        waterGlow 5s ease-in-out infinite;
-
-}
-
-
-/* Water movement */
-
-.lake::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:200%;
-
-    height:100%;
-
-    background:
-    repeating-linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,.05) 10px,
-        transparent 20px
-    );
-
-    animation:
-        waves 6s linear infinite;
-
-}
-
-
-@keyframes waves{
-
-    from{
-
-        transform:
-        translateX(0);
-
-    }
-
-    to{
-
-        transform:
-        translateX(-50%);
-
-    }
-
-}
-
-
-/* Reflection animation */
-
-@keyframes waterGlow{
-
-    0%,100%{
-
-        opacity:.6;
-
-    }
-
-    50%{
-
-        opacity:1;
-
-    }
-
-}
-
-
-
-/* ===============================
-   CINEMATIC FOG
-================================= */
-
-
-.fog{
-
-    position:absolute;
-
-    bottom:15%;
-
-    width:100%;
-
-    height:150px;
-
-    z-index:4;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,255,255,.15),
-            transparent 70%
-        );
-
-    filter:
-        blur(50px);
-
-    animation:
-        fogMove 10s ease-in-out infinite;
-
-}
-
-
-@keyframes fogMove{
-
-    0%,100%{
-
-        transform:
-        translateX(-60px);
-
-    }
-
-
-    50%{
-
-        transform:
-        translateX(60px);
-
-    }
-
-}
-
-/* ===============================
-   ROMANTIC COUPLE SILHOUETTE
-================================= */
-
-.couple{
-
-    position:absolute;
-
-    bottom:22%;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    font-size:130px;
-
-    z-index:6;
-
-    filter:
-        drop-shadow(0 0 35px #ff66cc);
-
-    animation:
-        coupleBreathe 5s ease-in-out infinite;
-
-}
-
-
-@keyframes coupleBreathe{
-
-    0%,100%{
-
-        transform:
-        translateX(-50%)
-        scale(1);
-
-    }
-
-    50%{
-
-        transform:
-        translateX(-50%)
-        scale(1.05);
-
-    }
-
-}
-
-
-
-/* ===============================
-   HANGING LANTERNS
-================================= */
-
-.lantern{
-
-    position:absolute;
-
-    top:0;
-
-    width:45px;
-
-    height:65px;
-
-    border-radius:
-        25px 25px 15px 15px;
-
-    background:
-        linear-gradient(
-            #ffbb44,
-            #ff5500
-        );
-
-    box-shadow:
-        0 0 25px #ff9900,
-        0 0 60px #ff5500;
-
-    z-index:7;
-
-    animation:
-        lanternSwing 4s ease-in-out infinite;
-
-}
-
-
-/* Lantern Rope */
-
-.lantern::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:3px;
-
-    height:120px;
-
-    background:#777;
-
-    top:-120px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-}
-
-
-@keyframes lanternSwing{
-
-    0%,100%{
-
-        transform:
-            rotate(-5deg);
-
-    }
-
-    50%{
-
-        transform:
-            rotate(5deg);
-
-    }
-
-}
-
-
-
-/* ===============================
-   ROSE GARDEN
-================================= */
-
-
-.rose-garden{
-
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-
-    height:80px;
-
-    z-index:8;
-
-    font-size:28px;
-
-    overflow:hidden;
-
-}
-
-
-.rose{
-
-    position:absolute;
-
-    bottom:0;
-
-    animation:
-        roseMove 3s ease-in-out infinite;
-
-}
-
-
-@keyframes roseMove{
-
-    0%,100%{
-
-        transform:
-            translateY(0);
-
-    }
-
-    50%{
-
-        transform:
-            translateY(-8px);
-
-    }
-
-}
-
-
-
-/* ===============================
-   FIREFLIES
-================================= */
-
-
-.firefly{
-
-    position:absolute;
-
-    width:8px;
-
-    height:8px;
-
-    border-radius:50%;
-
-    background:#ffee66;
-
-    box-shadow:
-        0 0 15px #ffee66,
-        0 0 35px #ffdd33;
-
-    z-index:5;
-
-    animation:
-        fireflyGlow 2s infinite;
-
-}
-
-
-@keyframes fireflyGlow{
-
-    0%,100%{
-
-        opacity:.2;
-
-        transform:
-            scale(.5);
-
-    }
-
-
-    50%{
-
-        opacity:1;
-
-        transform:
-            scale(1.5);
-
-    }
-
-}
-
-
-
-/* ===============================
-   MOBILE RESPONSIVE
-================================= */
-
-
-@media(max-width:700px){
-
-
-    .couple{
-
-        font-size:80px;
-
-        bottom:25%;
-
-    }
-
-
-    .lantern{
-
-        width:30px;
-
-        height:45px;
-
-    }
-
-
-    .rose-garden{
-
-        font-size:20px;
-
-    }
-
-}
-
-/* ===============================
-   CINEMATIC LOVE TITLE
-================================= */
-
-.title{
-
-    position:absolute;
-
-    top:32%;
-
-    left:50%;
-
-    transform:
-        translateX(-50%);
-
-    z-index:10;
-
-    text-align:center;
-
-    color:#ffffff;
-
-    font-size:65px;
-
-    font-weight:800;
-
-    letter-spacing:4px;
-
-    text-shadow:
-        0 0 15px #ff66cc,
-        0 0 35px #ff3399,
-        0 0 70px #ff0066;
-
-    animation:
-        titleGlow 3s ease-in-out infinite;
-
-}
-
-
-@keyframes titleGlow{
-
-    0%,100%{
-
-        filter:brightness(1);
-
-        transform:
-            translateX(-50%)
-            scale(1);
-
-    }
-
-
-    50%{
-
-        filter:brightness(1.4);
-
-        transform:
-            translateX(-50%)
-            scale(1.06);
-
-    }
-
-}
-
-
-
-/* ===============================
-   SUBTITLE
-================================= */
-
-.subtitle{
-
-    margin-top:18px;
-
-    color:#ffd7f0;
-
-    font-size:24px;
-
-    letter-spacing:2px;
-
-    text-shadow:
-        0 0 15px #ff99dd;
-
-}
-
-
-
-/* ===============================
-   LOVE QUOTES
-================================= */
-
-.quote{
-
-    position:absolute;
-
-    top:58%;
-
-    left:50%;
-
-    transform:
-        translateX(-50%);
-
-    width:80%;
-
-    text-align:center;
-
-    font-size:26px;
-
-    color:#ffffff;
-
-    z-index:10;
-
-    text-shadow:
-        0 0 18px #ff66cc;
-
-    opacity:0;
-
-    animation:
-        quoteFade 6s infinite;
-
-}
-
-
-@keyframes quoteFade{
-
-
-    0%,100%{
-
-        opacity:0;
-
-        transform:
-            translateX(-50%)
-            translateY(20px);
-
-    }
-
-
-    20%,80%{
-
-        opacity:1;
-
-        transform:
-            translateX(-50%)
-            translateY(0);
-
-    }
-
-}
-
-
-
-/* ===============================
-   FLOATING HEARTS
-================================= */
-
-.heart{
-
-    position:absolute;
-
-    bottom:-60px;
-
-    font-size:30px;
-
-    z-index:9;
-
-    animation:
-        heartFloat linear forwards;
-
-}
-
-
-@keyframes heartFloat{
-
-
-    from{
-
-        transform:
-            translateY(0)
-            scale(.6);
-
-        opacity:1;
-
-    }
-
-
-    to{
-
-        transform:
-            translateY(-120vh)
-            rotate(360deg)
-            scale(1.6);
-
-        opacity:0;
-
-    }
-
-}
-
-
-
-/* ===============================
-   ROMANTIC BUTTON
-================================= */
-
-.love-btn{
-
-    position:absolute;
-
-    bottom:120px;
-
-    left:50%;
-
-    transform:
-        translateX(-50%);
-
-    padding:15px 35px;
-
-    border:none;
-
-    border-radius:40px;
-
-    background:
-        linear-gradient(
-            45deg,
-            #ff0088,
-            #ff66cc
-        );
-
-    color:white;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    z-index:12;
-
-    box-shadow:
-        0 0 20px #ff0088,
-        0 0 50px #ff66cc;
-
-    transition:.4s;
-
-}
-
-
-.love-btn:hover{
-
-    transform:
-        translateX(-50%)
-        scale(1.1);
-
-    box-shadow:
-        0 0 35px #ff66cc,
-        0 0 80px #ff0088;
-
-}
-
-
-
-/* ===============================
-   MOBILE RESPONSIVE
-================================= */
-
-@media(max-width:700px){
-
-
-    .title{
-
-        font-size:35px;
-
-        width:90%;
-
-    }
-
-
-    .subtitle{
-
-        font-size:16px;
-
-    }
-
-
-    .quote{
-
-        font-size:18px;
-
-        width:90%;
-
-        top:60%;
-
-    }
-
-
-    .love-btn{
-
-        font-size:14px;
-
-        padding:12px 25px;
-
-    }
-
-}
-
-/* ===============================
-   PREMIUM GLASS MUSIC PLAYER
-================================= */
-
-.music-player{
-
-    position:absolute;
-
-    bottom:30px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:420px;
-
-    padding:18px 25px;
-
-    border-radius:25px;
-
-    background:
-        rgba(255,255,255,.08);
-
-    backdrop-filter:
-        blur(20px);
-
-    border:
-        1px solid rgba(255,255,255,.25);
-
-    box-shadow:
-        0 0 40px rgba(255,100,180,.6);
-
-    z-index:20;
-
-    text-align:center;
-
-}
-
-
-/* Song Name */
-
-.song-title{
-
-    color:#fff;
-
-    font-size:18px;
-
-    margin-bottom:15px;
-
-    letter-spacing:1px;
-
-    text-shadow:
-        0 0 12px #ff66cc;
-
-}
-
-
-
-/* ===============================
-   AUDIO VISUALIZER
-================================= */
-
-
-.visualizer{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:flex-end;
-
-    gap:5px;
-
-    height:45px;
-
-    margin-bottom:15px;
-
-}
-
-
-.bar{
-
-    width:6px;
-
-    height:20px;
-
-    border-radius:20px;
-
-    background:
-        linear-gradient(
-            #ff66cc,
-            #ffffff
-        );
-
-    animation:
-        musicBounce 1s infinite ease-in-out;
-
-}
-
-
-@keyframes musicBounce{
-
-    0%,100%{
-
-        height:15px;
-
-    }
-
-
-    50%{
-
-        height:45px;
-
-    }
-
-}
-
-
-
-/* ===============================
-   PROGRESS BAR
-================================= */
-
-
-.progress-container{
-
-    width:100%;
-
-    height:8px;
-
-    border-radius:10px;
-
-    background:
-        rgba(255,255,255,.25);
-
-    overflow:hidden;
-
-    margin:15px 0;
-
-}
-
-
-.progress{
-
-    width:0%;
-
-    height:100%;
-
-    border-radius:10px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #ff0088,
-            #ff99cc
-        );
-
-    box-shadow:
-        0 0 20px #ff0088;
-
-}
-
-
-
-/* ===============================
-   PLAY BUTTON
-================================= */
-
-
-.play-btn{
-
-    width:60px;
-
-    height:60px;
-
-    border-radius:50%;
-
-    border:none;
-
-    cursor:pointer;
-
-    color:white;
-
-    font-size:22px;
-
-    background:
-        linear-gradient(
-            45deg,
-            #ff0088,
-            #ff66cc
-        );
-
-    box-shadow:
-        0 0 25px #ff3399;
-
-    transition:.4s;
-
-}
-
-
-.play-btn:hover{
-
-    transform:scale(1.15);
-
-    box-shadow:
-        0 0 50px #ff66cc;
-
-}
-
-
-
-/* ===============================
-   MOBILE RESPONSIVE
-================================= */
-
-
-@media(max-width:700px){
-
-
-    .music-player{
-
-        width:90%;
-
-        bottom:20px;
-
-        padding:15px;
-
-    }
-
-
-    .song-title{
-
-        font-size:15px;
-
-    }
-
-
-    .play-btn{
-
-        width:50px;
-
-        height:50px;
-
-        font-size:18px;
-
-    }
-
-
-    .bar{
-
-        width:5px;
-
-    }
-
-}
-/* ===============================
-   AURORA LIGHTS
-================================= */
+#canvas-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;}
+#canvas-fx{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;}
 
 .aurora{
+position:fixed;top:0;left:0;width:100%;height:60%;z-index:2;pointer-events:none;
+background:linear-gradient(180deg,transparent 0%,rgba(76,175,80,0.03) 20%,transparent 40%);
+animation:auroraShift 8s ease-in-out infinite alternate;
+}
+.aurora::before{
+content:'';position:absolute;width:100%;height:100%;
+background:linear-gradient(120deg,transparent 0%,rgba(100,181,246,0.04) 30%,rgba(206,147,216,0.05) 60%,transparent 100%);
+animation:auroraShift 12s ease-in-out infinite alternate-reverse;
+}
+.aurora::after{
+content:'';position:absolute;width:100%;height:100%;
+background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(129,212,250,0.04) 0%,transparent 70%);
+animation:aurGlow 6s ease-in-out infinite alternate;
+}
+@keyframes auroraShift{
+0%{background-position:0% 50%;opacity:0.5;}
+100%{background-position:100% 50%;opacity:1;}
+}
+@keyframes aurGlow{0%{opacity:0.3;}100%{opacity:0.8;}}
 
-    position:absolute;
+.fog{
+position:fixed;bottom:0;left:0;width:200%;height:30%;z-index:3;pointer-events:none;
+background:linear-gradient(transparent,rgba(20,10,50,0.4));
+animation:fogDrift 20s linear infinite;
+}
+@keyframes fogDrift{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
-    top:-200px;
-    left:50%;
+.main-wrapper{position:relative;z-index:10;}
 
-    width:900px;
-    height:500px;
-
-    transform:
-        translateX(-50%);
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(0,255,255,.25),
-            rgba(255,0,255,.25),
-            rgba(100,255,100,.25)
-        );
-
-    filter:blur(80px);
-
-    z-index:1;
-
-    animation:
-        auroraMove 12s ease-in-out infinite;
-
+#hero{
+min-height:100vh;display:flex;flex-direction:column;align-items:center;
+justify-content:center;position:relative;padding:20px;
 }
 
+.moon-container{
+position:absolute;top:8%;right:10%;width:120px;height:120px;
+}
+.moon{
+width:120px;height:120px;border-radius:50%;
+background:radial-gradient(circle at 35% 35%,#fffde7,#fff9c4,#f9a825,#e65100);
+box-shadow:0 0 30px rgba(255,236,64,0.5),0 0 60px rgba(255,193,7,0.3),0 0 100px rgba(255,152,0,0.2);
+animation:moonFloat 6s ease-in-out infinite;position:relative;overflow:hidden;
+}
+.moon::before{
+content:'';position:absolute;width:20px;height:20px;background:rgba(255,236,64,0.3);
+border-radius:50%;top:20px;left:25px;box-shadow:15px 10px 0 10px rgba(255,236,64,0.15),35px 5px 0 5px rgba(255,236,64,0.2);
+}
+.moon-reflection{
+position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);
+width:60px;height:200px;
+background:linear-gradient(transparent,rgba(255,236,64,0.15),rgba(255,236,64,0.05),transparent);
+animation:reflectionWave 4s ease-in-out infinite;border-radius:50%;
+}
+@keyframes moonFloat{0%,100%{transform:translateY(0) rotate(-2deg);}50%{transform:translateY(-10px) rotate(2deg);}}
+@keyframes reflectionWave{0%,100%{opacity:0.5;transform:translateX(-50%) scaleX(1);}50%{opacity:0.8;transform:translateX(-50%) scaleX(1.3);}}
 
-@keyframes auroraMove{
+.title-block{text-align:center;z-index:20;padding:20px;}
+.eyebrow{
+font-size:clamp(12px,2vw,16px);letter-spacing:6px;color:var(--gold);
+text-transform:uppercase;opacity:0;animation:fadeInDown 1s 0.5s forwards;
+font-style:italic;
+}
+.main-title{
+font-size:clamp(48px,10vw,120px);font-weight:700;line-height:1;
+background:linear-gradient(135deg,#ff6b9d,#ffd700,#a855f7,#ff6b9d);
+background-size:300% 300%;-webkit-background-clip:text;background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:gradShift 4s ease infinite,fadeInUp 1s 0.8s both;
+text-shadow:none;filter:drop-shadow(0 0 30px rgba(255,107,157,0.5));
+font-family:'Georgia',serif;
+}
+@keyframes gradShift{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
 
-    0%,100%{
-
-        transform:
-            translateX(-50%)
-            rotate(-5deg);
-
-    }
-
-    50%{
-
-        transform:
-            translateX(-50%)
-            rotate(5deg);
-
-    }
-
+.subtitle{
+font-size:clamp(14px,2.5vw,22px);color:rgba(255,255,255,0.8);
+margin-top:12px;letter-spacing:3px;font-style:italic;
+opacity:0;animation:fadeInUp 1s 1.2s both;
+}
+.heart-divider{
+font-size:24px;margin:16px 0;opacity:0;animation:fadeInUp 1s 1.4s both;
+animation-fill-mode:forwards;
+}
+.heart-divider span{
+display:inline-block;animation:heartBeat 1.5s ease-in-out infinite;color:var(--pink);
 }
 
+#typewriter{
+font-size:clamp(16px,3vw,28px);color:var(--soft-gold);font-style:italic;
+min-height:40px;text-align:center;margin:10px 0;
+opacity:0;animation:fadeInUp 1s 1.6s both;
+text-shadow:0 0 20px rgba(255,236,179,0.5);
+}
+.cursor-blink{animation:blink 0.7s step-end infinite;color:var(--pink);}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
 
-/* ===============================
-   SPARKLES
-================================= */
-
-.sparkle{
-
-    position:absolute;
-
-    width:6px;
-    height:6px;
-
-    border-radius:50%;
-
-    background:white;
-
-    box-shadow:
-        0 0 15px white,
-        0 0 30px #ffccff;
-
-    animation:
-        sparkleMove 3s linear forwards;
-
+.glass-card{
+background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);
+border-radius:24px;padding:24px 32px;backdrop-filter:blur(20px);
+box-shadow:0 8px 32px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
+.stats-row{
+display:flex;gap:20px;justify-content:center;margin:20px 0;flex-wrap:wrap;
+opacity:0;animation:fadeInUp 1s 2s both;
+}
+.stat-item{text-align:center;padding:16px 20px;}
+.stat-num{
+font-size:clamp(24px,5vw,42px);font-weight:700;
+background:linear-gradient(135deg,var(--gold),var(--pink));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.stat-label{font-size:11px;letter-spacing:3px;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:4px;}
 
-@keyframes sparkleMove{
+.love-meter-wrap{
+width:min(380px,90vw);margin:0 auto 20px;opacity:0;animation:fadeInUp 1s 2.2s both;
+}
+.love-label{text-align:center;font-size:13px;letter-spacing:4px;color:var(--gold);margin-bottom:8px;text-transform:uppercase;}
+.love-bar-bg{
+height:8px;background:rgba(255,255,255,0.1);border-radius:99px;overflow:hidden;
+box-shadow:inset 0 0 10px rgba(0,0,0,0.3);
+}
+.love-bar-fill{
+height:100%;width:0%;border-radius:99px;
+background:linear-gradient(90deg,var(--purple),var(--pink),var(--gold));
+box-shadow:0 0 15px var(--glow-pink);
+animation:loveFill 3s 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+@keyframes loveFill{to{width:100%;}}
+.love-pct{text-align:center;font-size:22px;font-weight:700;color:var(--pink);margin-top:6px;}
 
-    from{
+.btn-row{
+display:flex;gap:16px;justify-content:center;margin:24px 0;flex-wrap:wrap;
+opacity:0;animation:fadeInUp 1s 2.4s both;position:relative;
+}
+.btn-yes{
+padding:16px 48px;font-size:clamp(16px,3vw,22px);font-weight:700;
+background:linear-gradient(135deg,var(--rose),var(--purple));
+border:none;border-radius:99px;color:#fff;cursor:pointer;letter-spacing:2px;
+box-shadow:0 0 30px var(--glow-pink),0 4px 15px rgba(0,0,0,0.3);
+transition:all 0.3s;font-family:'Georgia',serif;
+}
+.btn-yes:hover{transform:scale(1.08);box-shadow:0 0 50px var(--glow-pink),0 8px 25px rgba(0,0,0,0.4);}
+.btn-no{
+padding:16px 36px;font-size:clamp(14px,2.5vw,18px);
+background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);
+border-radius:99px;color:rgba(255,255,255,0.7);cursor:pointer;letter-spacing:2px;
+transition:all 0.3s;font-family:'Georgia',serif;position:relative;
+}
+.btn-no:hover{background:rgba(255,255,255,0.12);}
 
-        transform:
-            translateY(0)
-            scale(.5);
+.quote-card{
+text-align:center;max-width:500px;margin:0 auto;
+opacity:0;animation:fadeInUp 1s 2.6s both;
+}
+.quote-text{
+font-size:clamp(14px,2.5vw,18px);font-style:italic;
+color:rgba(255,255,255,0.8);line-height:1.7;
+}
+.quote-author{font-size:12px;color:var(--gold);letter-spacing:3px;margin-top:10px;text-transform:uppercase;}
 
-        opacity:1;
+#gallery-section{padding:80px 20px;position:relative;}
+.section-title{
+text-align:center;font-size:clamp(28px,5vw,52px);margin-bottom:40px;
+background:linear-gradient(135deg,var(--pink),var(--gold));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.gallery-slider{position:relative;overflow:hidden;border-radius:20px;}
+.gallery-track{display:flex;transition:transform 0.7s cubic-bezier(0.22,1,0.36,1);}
+.gallery-slide{
+min-width:100%;display:flex;align-items:center;justify-content:center;
+height:clamp(200px,40vw,380px);
+}
+.gallery-img-wrap{
+width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+border-radius:20px;overflow:hidden;position:relative;
+}
+.gallery-emoji{font-size:clamp(60px,15vw,120px);filter:drop-shadow(0 0 20px rgba(255,107,157,0.8));}
+.gallery-caption{
+position:absolute;bottom:0;left:0;right:0;padding:20px;
+background:linear-gradient(transparent,rgba(0,0,0,0.7));
+text-align:center;font-style:italic;font-size:clamp(14px,2.5vw,18px);
+}
+.gallery-dots{display:flex;justify-content:center;gap:8px;margin-top:16px;}
+.gallery-dot{
+width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);
+cursor:pointer;transition:all 0.3s;
+}
+.gallery-dot.active{background:var(--pink);box-shadow:0 0 10px var(--pink);}
+.gallery-arrow{
+position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);
+border:1px solid rgba(255,255,255,0.2);color:#fff;width:44px;height:44px;
+border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;
+justify-content:center;z-index:5;backdrop-filter:blur(10px);transition:all 0.3s;
+}
+.gallery-arrow:hover{background:rgba(255,107,157,0.3);box-shadow:0 0 20px var(--pink);}
+.gallery-arrow.prev{left:10px;}
+.gallery-arrow.next{right:10px;}
 
-    }
+#music-section{padding:40px 20px;}
+.music-player{
+max-width:420px;margin:0 auto;padding:24px;
+background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);
+border-radius:24px;backdrop-filter:blur(20px);
+box-shadow:0 0 40px rgba(255,107,157,0.15);
+}
+.now-playing{text-align:center;font-size:11px;letter-spacing:4px;color:var(--gold);margin-bottom:16px;text-transform:uppercase;}
+.album-art{
+width:120px;height:120px;border-radius:50%;margin:0 auto 16px;
+background:radial-gradient(circle,var(--rose),var(--deep-purple));
+display:flex;align-items:center;justify-content:center;font-size:48px;
+box-shadow:0 0 30px var(--glow-pink);
+animation:albumSpin 8s linear infinite;animation-play-state:paused;
+}
+.album-art.spinning{animation-play-state:running;}
+@keyframes albumSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+.song-title{text-align:center;font-size:18px;font-weight:700;color:#fff;margin-bottom:4px;}
+.song-artist{text-align:center;font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:16px;letter-spacing:2px;}
+.progress-bar-wrap{margin:12px 0;cursor:pointer;}
+.progress-bg{height:4px;background:rgba(255,255,255,0.1);border-radius:99px;position:relative;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--pink),var(--gold));border-radius:99px;width:0%;transition:width 0.5s;}
+.progress-dot{
+width:12px;height:12px;background:#fff;border-radius:50%;position:absolute;
+top:-4px;left:0%;transform:translateX(-50%);box-shadow:0 0 8px var(--pink);
+transition:left 0.5s;cursor:pointer;
+}
+.time-row{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;}
+.controls{display:flex;align-items:center;justify-content:center;gap:20px;margin:16px 0;}
+.ctrl-btn{
+background:none;border:none;color:#fff;cursor:pointer;font-size:24px;
+transition:all 0.3s;padding:8px;
+}
+.ctrl-btn:hover{transform:scale(1.15);filter:drop-shadow(0 0 8px var(--pink));}
+.play-btn{
+width:56px;height:56px;border-radius:50%;
+background:linear-gradient(135deg,var(--rose),var(--purple));
+border:none;color:#fff;font-size:22px;cursor:pointer;
+box-shadow:0 0 20px var(--glow-pink);transition:all 0.3s;display:flex;align-items:center;justify-content:center;
+}
+.play-btn:hover{transform:scale(1.1);box-shadow:0 0 35px var(--glow-pink);}
+.volume-row{display:flex;align-items:center;gap:10px;margin-top:10px;}
+.vol-icon{font-size:16px;color:rgba(255,255,255,0.5);}
+.vol-slider{
+flex:1;height:4px;-webkit-appearance:none;appearance:none;
+background:rgba(255,255,255,0.1);border-radius:99px;outline:none;
+}
+.vol-slider::-webkit-slider-thumb{
+-webkit-appearance:none;width:14px;height:14px;border-radius:50%;
+background:var(--pink);cursor:pointer;box-shadow:0 0 8px var(--pink);
+}
+.playlist{margin-top:16px;border-top:1px solid rgba(255,255,255,0.1);padding-top:12px;}
+.playlist-item{
+display:flex;align-items:center;gap:10px;padding:8px;border-radius:12px;
+cursor:pointer;transition:all 0.3s;
+}
+.playlist-item:hover,.playlist-item.active{background:rgba(255,107,157,0.15);}
+.playlist-item.active .pl-num{color:var(--pink);}
+.pl-num{width:20px;text-align:center;font-size:12px;color:rgba(255,255,255,0.3);}
+.pl-info{flex:1;}
+.pl-title{font-size:13px;color:#fff;}
+.pl-art{font-size:11px;color:rgba(255,255,255,0.4);}
+.pl-dur{font-size:11px;color:rgba(255,255,255,0.3);}
+.visualizer{display:flex;align-items:flex-end;justify-content:center;gap:3px;height:40px;margin:12px 0;}
+.viz-bar{
+width:4px;border-radius:99px;
+background:linear-gradient(to top,var(--pink),var(--gold));
+animation:vizAnim 0.5s ease infinite alternate;animation-play-state:paused;
+min-height:4px;
+}
+.viz-bar.active{animation-play-state:running;}
+@keyframes vizAnim{from{height:4px;}to{height:36px;}}
 
+#letter-section{padding:60px 20px;}
+.love-letter{
+max-width:560px;margin:0 auto;
+background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);
+border-radius:24px;padding:36px;position:relative;overflow:hidden;
+}
+.love-letter::before{
+content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+background:radial-gradient(ellipse,rgba(255,107,157,0.03),transparent 70%);
+animation:letterGlow 5s ease-in-out infinite alternate;
+}
+@keyframes letterGlow{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+.letter-header{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:20px;text-transform:uppercase;}
+.letter-body{font-size:clamp(14px,2.5vw,16px);line-height:1.9;color:rgba(255,255,255,0.85);font-style:italic;}
+.letter-sig{text-align:right;margin-top:24px;font-size:18px;color:var(--pink);}
 
-    to{
+#finale{
+position:fixed;top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,0.92);backdrop-filter:blur(20px);
+z-index:9000;display:none;align-items:center;justify-content:center;
+flex-direction:column;padding:20px;
+}
+#finale.show{display:flex;animation:finaleIn 1.5s ease;}
+@keyframes finaleIn{from{opacity:0;}to{opacity:1;}}
+.ring-animation{position:relative;width:160px;height:160px;margin:0 auto 24px;}
+.ring{
+width:120px;height:120px;border-radius:50%;border:6px solid transparent;
+background:linear-gradient(#0a0020,#0a0020) padding-box,
+  linear-gradient(135deg,var(--gold),var(--pink),var(--gold)) border-box;
+position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+box-shadow:0 0 30px var(--glow-gold),0 0 60px rgba(255,215,0,0.3);
+animation:ringPulse 2s ease-in-out infinite;
+}
+.ring::before{
+content:'💎';position:absolute;top:-18px;left:50%;transform:translateX(-50%);
+font-size:28px;filter:drop-shadow(0 0 10px var(--gold));
+}
+@keyframes ringPulse{0%,100%{box-shadow:0 0 30px var(--glow-gold);}50%{box-shadow:0 0 60px var(--glow-gold),0 0 100px rgba(255,215,0,0.4);}}
+.finale-title{
+font-size:clamp(32px,7vw,72px);text-align:center;
+background:linear-gradient(135deg,var(--gold),var(--pink),var(--gold));
+background-size:200% auto;-webkit-background-clip:text;background-clip:text;
+-webkit-text-fill-color:transparent;animation:gradShift 2s linear infinite;
+margin-bottom:16px;font-family:'Georgia',serif;
+}
+.finale-sub{
+font-size:clamp(14px,3vw,22px);text-align:center;color:rgba(255,255,255,0.8);
+font-style:italic;margin-bottom:32px;
+}
+.finale-btn-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
-        transform:
-            translateY(-150px)
-            scale(2);
+#toast{
+position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(100px);
+background:linear-gradient(135deg,var(--rose),var(--purple));
+color:#fff;padding:16px 32px;border-radius:99px;font-size:16px;font-style:italic;
+z-index:99000;transition:transform 0.5s cubic-bezier(0.22,1,0.36,1);
+box-shadow:0 0 30px var(--glow-pink);white-space:nowrap;
+}
+#toast.show{transform:translateX(-50%) translateY(0);}
 
-        opacity:0;
+#canvas-fireworks{position:fixed;top:0;left:0;width:100%;height:100%;z-index:8000;pointer-events:none;display:none;}
 
-    }
-
+.floating-hearts-container,.petal-container,.balloon-container{
+position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:5;overflow:hidden;
 }
 
-
-/* ===============================
-   FINAL PROPOSAL MESSAGE
-================================= */
-
-.final-message{
-
-    position:absolute;
-
-    top:40%;
-
-    left:50%;
-
-    transform:
-        translate(-50%, -50%)
-        scale(.5);
-
-    width:90%;
-
-    text-align:center;
-
-    color:white;
-
-    font-size:70px;
-
-    font-weight:bold;
-
-    z-index:50;
-
-    opacity:0;
-
-    text-shadow:
-        0 0 20px #ff66cc,
-        0 0 60px #ff0088;
-
-    animation:
-        proposalShow 8s forwards;
-
-    animation-delay:60s;
-
+.scroll-hint{
+position:absolute;bottom:30px;left:50%;transform:translateX(-50%);
+opacity:0;animation:fadeInUp 1s 3s both;
+font-size:12px;letter-spacing:3px;color:rgba(255,255,255,0.4);text-transform:uppercase;
 }
-
-
-@keyframes proposalShow{
-
-    from{
-
-        opacity:0;
-
-        transform:
-            translate(-50%, -50%)
-            scale(.5);
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-        transform:
-            translate(-50%, -50%)
-            scale(1);
-
-    }
-
+.scroll-hint::after{
+content:'↓';display:block;text-align:center;margin-top:6px;font-size:18px;
+animation:bounce 1.5s ease-in-out infinite;color:var(--pink);
 }
+@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
 
+@keyframes heartBeat{0%,100%{transform:scale(1);}14%{transform:scale(1.3);}28%{transform:scale(1);}42%{transform:scale(1.2);}70%{transform:scale(1);}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-5deg);}50%{transform:translateY(-20px) rotate(5deg);}}
 
-/* ===============================
-   MOBILE FINAL FIX
-================================= */
+.parallax-layer{transform-style:preserve-3d;}
 
-@media(max-width:700px){
+.heartbeat-ring{
+position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+width:300px;height:300px;border-radius:50%;
+border:2px solid rgba(255,107,157,0.1);pointer-events:none;z-index:4;
+animation:heartRing 2s ease-in-out infinite;display:none;
+}
+@keyframes heartRing{0%{transform:translate(-50%,-50%) scale(0.8);opacity:0.8;}100%{transform:translate(-50%,-50%) scale(2);opacity:0;}}
 
-    .final-message{
-
-        font-size:35px;
-
-    }
-
-
-    .aurora{
-
-        width:500px;
-
-    }
-
-}</style>
-
-
+@media(max-width:640px){
+.stats-row{gap:10px;}
+.stat-item{padding:12px 14px;}
+.music-player{padding:18px;}
+.love-letter{padding:24px;}
+.btn-yes{padding:14px 36px;}
+.btn-no{padding:14px 28px;}
+}
+</style>
 </head>
-<script>
-
-
-/* ===============================
-   CREATE 300 TWINKLING STARS
-================================= */
-
-for(let i = 0; i < 300; i++){
-
-    let star = document.createElement("div");
-
-    star.className = "star";
-
-    let size = Math.random() * 3;
-
-    star.style.width = size + "px";
-    star.style.height = size + "px";
-
-    star.style.left =
-        Math.random() * 100 + "vw";
-
-    star.style.top =
-        Math.random() * 100 + "vh";
-
-    star.style.animationDelay =
-        Math.random() * 5 + "s";
-
-
-    document.querySelector(".scene")
-    .appendChild(star);
-
-}
-
-
-
-/* ===============================
-   FLOATING HEARTS
-================================= */
-
-setInterval(() => {
-
-
-    let heart = document.createElement("div");
-
-
-    heart.className = "heart";
-
-
-    heart.innerHTML = "💖";
-
-
-    heart.style.left =
-        Math.random() * 100 + "vw";
-
-
-    heart.style.animationDuration =
-        (4 + Math.random() * 5) + "s";
-
-
-    document.querySelector(".scene")
-    .appendChild(heart);
-
-
-    setTimeout(() => {
-
-        heart.remove();
-
-    }, 9000);
-
-
-}, 600);
-
-
-
-
-
-/* ===============================
-   GLOWING FIREFLIES
-================================= */
-
-
-setInterval(() => {
-
-
-    let firefly =
-        document.createElement("div");
-
-
-    firefly.className =
-        "firefly";
-
-
-    firefly.style.left =
-        Math.random() * 100 + "vw";
-
-
-    firefly.style.top =
-        (40 + Math.random() * 40)
-        + "vh";
-
-
-    document.querySelector(".scene")
-    .appendChild(firefly);
-
-
-    setTimeout(() => {
-
-
-        firefly.remove();
-
-
-    }, 5000);
-
-
-}, 500);
-
-
-
-
-
-/* ===============================
-   MUSIC PLAYER CONTROLS
-================================= */
-
-
-const song =
-document.getElementById("song");
-
-
-const button =
-document.querySelector(".play-btn");
-
-
-
-function toggleMusic(){
-
-
-    if(song.paused){
-
-
-        song.play();
-
-
-        button.innerHTML = "❚❚";
-
-
-    }
-
-    else{
-
-
-        song.pause();
-
-
-        button.innerHTML = "▶";
-
-
-    }
-
-}
-
-
-
-
-
-/* ===============================
-   MUSIC PROGRESS BAR
-================================= */
-
-
-const progress =
-document.getElementById("progress");
-
-
-
-song.addEventListener("timeupdate", () => {
-
-
-    let percent =
-    (song.currentTime / song.duration)
-    * 100;
-
-
-    progress.style.width =
-    percent + "%";
-
-
-});
-
-
-
-
-
-/* ===============================
-   ROMANTIC QUOTES CHANGER
-================================= */
-
-
-const quotes = [
-
-"Every heartbeat whispers your name ❤️",
-
-"Under this moon, I found my forever 🌙",
-
-"Your smile is my favorite melody ✨",
-
-"My universe begins and ends with you 💕",
-
-"Will you hold my hand forever? 💍",
-
-"Every star in the sky tells our story ⭐"
-
-];
-
-
-
-const quote =
-document.getElementById("quote");
-
-
-let index = 0;
-
-
-setInterval(() => {
-
-
-    quote.style.opacity = 0;
-
-
-
-    setTimeout(() => {
-
-
-        index++;
-
-
-        if(index >= quotes.length){
-
-
-            index = 0;
-
-
-        }
-
-
-        quote.innerHTML =
-        quotes[index];
-
-
-        quote.style.opacity = 1;
-
-
-    }, 800);
-
-
-
-}, 6000);
-
-
-
-
-/* ===============================
-   AUTO PLAY EFFECT
-================================= */
-
-
-window.addEventListener("load", () => {
-
-
-    button.style.animation =
-    "titleGlow 2s infinite";
-
-
-});
-/* ===============================
-   MAGICAL SPARKLES
-================================= */
-
-setInterval(() => {
-
-
-    let sparkle =
-        document.createElement("div");
-
-
-    sparkle.className =
-        "sparkle";
-
-
-    sparkle.style.left =
-        Math.random()*100 + "vw";
-
-
-    sparkle.style.top =
-        (30 + Math.random()*60)
-        + "vh";
-
-
-    document.querySelector(".scene")
-    .appendChild(sparkle);
-
-
-    setTimeout(() => {
-
-        sparkle.remove();
-
-    }, 3000);
-
-
-}, 250);
-
-
-
-
-
-/* ===============================
-   EXTRA SHOOTING STARS
-================================= */
-
-setInterval(() => {
-
-
-    let shoot =
-        document.createElement("div");
-
-
-    shoot.className =
-        "shooting-star";
-
-
-    shoot.style.top =
-        Math.random()*40 + "vh";
-
-
-    shoot.style.left =
-        "110vw";
-
-
-    shoot.style.animationDuration =
-        (2 + Math.random()*3)
-        + "s";
-
-
-    document.querySelector(".scene")
-    .appendChild(shoot);
-
-
-    setTimeout(() => {
-
-        shoot.remove();
-
-    }, 5000);
-
-
-}, 8000);
-
-
-</script>
-
-
 <body>
-    
-
-    <div class="scene">
-        <!-- Aurora Lights -->
-
+<div id="custom-cursor"></div>
+<canvas id="canvas-bg"></canvas>
+<canvas id="canvas-fx"></canvas>
+<canvas id="canvas-fireworks"></canvas>
 <div class="aurora"></div>
-
-
-<!-- Final Proposal -->
-
-<div class="final-message">
-
-    💍 Will You Marry Me? ❤️
-
-</div>
-
-        <!-- Cinematic Mountains -->
-
-<div class="mountains">
-
-    <div class="mountain1"></div>
-
-    <div class="mountain2"></div>
-
-</div>
-
-
-<!-- Magical Moving Fog -->
-
 <div class="fog"></div>
+<div class="floating-hearts-container" id="hearts-container"></div>
+<div class="petal-container" id="petals-container"></div>
+<div class="balloon-container" id="balloons-container"></div>
+<div class="heartbeat-ring" id="heartbeat-ring"></div>
 
-
-<!-- Lake Reflection -->
-
-<div class="lake"></div>
-
-    <!-- Ultra HD Moon -->
-<div class="moon"></div>
-
-
-<!-- Shooting Star -->
-<div class="shooting-star"></div>
-
-
-    <!-- Space Glow -->
-    <div class="space-glow"></div>
-
-
-    <!-- Cinematic Nebula -->
-    <div class="nebula one"></div>
-
-    <div class="nebula two"></div>
-
-    <div class="nebula three"></div>
-
-
-    <!-- Dark Horizon -->
-    <div class="horizon"></div>
-
-    <!-- Romantic Title -->
-
-<div class="title">
-
-    Meri Banogi Kya ❤️
-
-    <div class="subtitle">
-
-        A Love Story Written In The Stars ✨
-
-        <!-- Audio File -->
-
-<audio id="song">
-
-    <source 
-        src="song.mp3" 
-        type="audio/mp3">
-
-</audio>
-
-
-
-<!-- Premium Music Player -->
-
-<div class="music-player">
-
-
-    <div class="song-title">
-
-        🎵 Meri Banogi Kya - Rito Riba
-
+<div class="main-wrapper">
+  <section id="hero">
+    <div class="moon-container parallax-layer" data-speed="0.3">
+      <div class="moon"></div>
+      <div class="moon-reflection"></div>
+    </div>
+    <div class="title-block">
+      <div class="eyebrow">✦ Ek Khaas Paigaam ✦</div>
+      <h1 class="main-title">Meri Banogi Kya?</h1>
+      <div class="subtitle">❤️ &nbsp; With All My Heart &nbsp; ❤️</div>
+      <div class="heart-divider"><span>♥</span> &nbsp; <span style="animation-delay:0.3s">♥</span> &nbsp; <span style="animation-delay:0.6s">♥</span></div>
+      <div id="typewriter"><span id="tw-text"></span><span class="cursor-blink">|</span></div>
     </div>
 
-
-
-    <!-- Audio Visualizer -->
-
-    <div class="visualizer" id="visualizer">
-
-
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-
-
+    <div class="stats-row">
+      <div class="stat-item glass-card">
+        <div class="stat-num" id="days-count">0</div>
+        <div class="stat-label">Din Saath</div>
+      </div>
+      <div class="stat-item glass-card">
+        <div class="stat-num" id="hours-count">0</div>
+        <div class="stat-label">Ghante</div>
+      </div>
+      <div class="stat-item glass-card">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Pyaar</div>
+      </div>
     </div>
 
+    <div class="love-meter-wrap glass-card" style="padding:20px 28px;">
+      <div class="love-label">💖 Love Meter 💖</div>
+      <div class="love-bar-bg"><div class="love-bar-fill" id="love-bar"></div></div>
+      <div class="love-pct">100% ❤️ Tumhara</div>
+    </div>
 
+    <div class="btn-row" id="btn-row">
+      <button class="btn-yes" id="btn-yes" onclick="onYes()">💍 Haan Ji! ✨</button>
+      <button class="btn-no" id="btn-no" onmouseenter="escapeBtn(this)" onclick="onNo()">Abhi Nahi 🙈</button>
+    </div>
 
-    <!-- Progress -->
+    <div class="quote-card glass-card" style="margin-top:10px;">
+      <div class="quote-text" id="quote-text">Tumhari ek muskaan meri poori duniya roshan kar deti hai...</div>
+      <div class="quote-author" id="quote-author">— Dil Se</div>
+    </div>
+    <div class="scroll-hint">Aur Neeche Aao</div>
+  </section>
 
-    <div class="progress-container">
-
-        <div class="progress" id="progress">
-
+  <section id="gallery-section">
+    <h2 class="section-title">💫 Hamare Pal 💫</h2>
+    <div class="glass-card" style="padding:20px;max-width:700px;margin:0 auto;position:relative;">
+      <div class="gallery-slider">
+        <button class="gallery-arrow prev" id="gal-prev">‹</button>
+        <div class="gallery-track" id="gal-track">
+          <div class="gallery-slide">
+            <div class="gallery-img-wrap" style="background:linear-gradient(135deg,#4a0080,#880e4f);">
+              <div class="gallery-emoji">🌙</div>
+              <div class="gallery-caption">Pehli Nazar — Woh lamha jo meri zindagi badal gaya</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-img-wrap" style="background:linear-gradient(135deg,#1a237e,#4a0080);">
+              <div class="gallery-emoji">⭐</div>
+              <div class="gallery-caption">Taaron ki Roshan Raat — Sirf hum dono aur yeh asman</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-img-wrap" style="background:linear-gradient(135deg,#880e4f,#e91e63);">
+              <div class="gallery-emoji">🌹</div>
+              <div class="gallery-caption">Teri Hansi — Meri sabse pyaari aawaz</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-img-wrap" style="background:linear-gradient(135deg,#004d40,#1a237e);">
+              <div class="gallery-emoji">💫</div>
+              <div class="gallery-caption">Sapnon ki Duniya — Jahan hum saath hain sada</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-img-wrap" style="background:linear-gradient(135deg,#b71c1c,#4a0080);">
+              <div class="gallery-emoji">❤️</div>
+              <div class="gallery-caption">Yeh Dil — Jo sirf tumhara hai, hamesha hamesha</div>
+            </div>
+          </div>
         </div>
-
+        <button class="gallery-arrow next" id="gal-next">›</button>
+      </div>
+      <div class="gallery-dots" id="gal-dots"></div>
     </div>
+  </section>
 
-
-
-    <!-- Play Button -->
-
-    <button 
-        class="play-btn"
-        onclick="toggleMusic()">
-
-        ▶
-
-    </button>
-
-
-</div>
-
+  <section id="music-section">
+    <h2 class="section-title">🎵 Dil Ka Sangeet 🎵</h2>
+    <div class="music-player">
+      <div class="now-playing">♫ &nbsp; Now Playing &nbsp; ♫</div>
+      <div class="album-art" id="album-art">🎵</div>
+      <div class="song-title" id="song-title">Tum Hi Ho</div>
+      <div class="song-artist" id="song-artist">Arijit Singh</div>
+      <div class="visualizer" id="visualizer"></div>
+      <div class="progress-bar-wrap" id="progress-wrap">
+        <div class="progress-bg">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-dot" id="progress-dot"></div>
+        </div>
+      </div>
+      <div class="time-row">
+        <span id="cur-time">0:00</span>
+        <span id="dur-time">3:45</span>
+      </div>
+      <div class="controls">
+        <button class="ctrl-btn" id="btn-prev-song" title="Previous">⏮</button>
+        <button class="play-btn" id="btn-play" onclick="togglePlay()">▶</button>
+        <button class="ctrl-btn" id="btn-next-song" title="Next">⏭</button>
+      </div>
+      <div class="volume-row">
+        <span class="vol-icon">🔈</span>
+        <input type="range" class="vol-slider" id="vol-slider" min="0" max="1" step="0.02" value="0.7">
+        <span class="vol-icon">🔊</span>
+      </div>
+      <div class="playlist" id="playlist"></div>
     </div>
+  </section>
 
+  <section id="letter-section">
+    <h2 class="section-title">💌 In my Heart 💌</h2>
+    <div class="love-letter">
+      <div class="letter-header">Mere Dil Ki Baat...</div>
+      <div class="letter-body">
+        Jab se tumse mili hoon, meri duniya baddal gayi hai.<br><br>
+        Tumhari muskaan mein woh jaadu hai jo mujhe roz jeene ki wajah deta hai. Tumhari aankhen — unhe dekh ke lagta hai jaise koi khaas khazana mil gaya ho jo sirf mera hai.<br><br>
+        Main chahta/chahti hoon ki tum meri zindagi ka hissa bano — har subah, har shaam, har raat, hamesha ke liye.<br><br>
+        Yeh pyaar sachcha hai, yeh jazbaat asli hain. Aur main tumhare saath ek naya safar shuru karna chahta/chahti hoon.<br><br>
+        <strong style="color:var(--pink);">Kya tum meri banogi?</strong>
+      </div>
+      <div class="letter-sig">— Only YOURS- &nbsp; ❤️</div>
+    </div>
+  </section>
 </div>
 
+<section id="finale">
+  <div class="ring-animation">
+    <div class="ring"></div>
+  </div>
+  <div class="finale-title">💍 Will You Marry Me? ❤️</div>
+  <div class="finale-sub">Tumhare bina yeh zindagi adhuri hai...</div>
+  <div class="finale-btn-row">
+    <button class="btn-yes" onclick="onYes()" style="font-size:20px;padding:18px 56px;">💍 Haan! Hamesha! ❤️</button>
+  </div>
+</section>
 
+<div id="toast">🎉 Yay! Dil khush ho gaya! ❤️</div>
 
-<!-- Romantic Quote -->
+<script>
+(function(){
 
-<div class="quote" id="quote">
+const cursor = document.getElementById('custom-cursor');
+let mx=0,my=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cursor.style.left=mx+'px';cursor.style.top=my+'px';
+  spawnTrailHeart(mx,my);
+});
+document.addEventListener('mouseleave',()=>cursor.style.opacity='0');
+document.addEventListener('mouseenter',()=>cursor.style.opacity='1');
 
-    "Every heartbeat whispers your name ❤️"
+let trailTimer=0;
+function spawnTrailHeart(x,y){
+  const now=Date.now();
+  if(now-trailTimer<80)return;
+  trailTimer=now;
+  const el=document.createElement('div');
+  el.style.cssText=`position:fixed;left:${x}px;top:${y}px;font-size:${10+Math.random()*10}px;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);animation:trailFade 1s forwards;color:hsl(${Math.random()*60+330},100%,70%);`;
+  el.textContent='♥';
+  document.body.appendChild(el);
+  const style=document.createElement('style');
+  style.textContent='@keyframes trailFade{0%{opacity:1;transform:translate(-50%,-50%) scale(1);}100%{opacity:0;transform:translate(-50%,-200%) scale(0.3);}}';
+  if(!document.querySelector('#trail-style')){style.id='trail-style';document.head.appendChild(style);}
+  setTimeout(()=>el.remove(),1000);
+}
 
-</div>
+const bgCanvas=document.getElementById('canvas-bg');
+const bgCtx=bgCanvas.getContext('2d');
+const fxCanvas=document.getElementById('canvas-fx');
+const fxCtx=fxCanvas.getContext('2d');
+let W,H;
+function resize(){
+  W=bgCanvas.width=fxCanvas.width=window.innerWidth;
+  H=bgCanvas.height=fxCanvas.height=window.innerHeight;
+}
+resize();
+window.addEventListener('resize',resize);
 
+const stars=[];
+for(let i=0;i<350;i++){
+  stars.push({
+    x:Math.random()*W,y:Math.random()*H,
+    r:Math.random()*1.8+0.3,
+    alpha:Math.random(),
+    speed:Math.random()*0.015+0.005,
+    twinkle:Math.random()*Math.PI*2
+  });
+}
 
+const shootingStars=[];
+function spawnShootingStar(){
+  shootingStars.push({
+    x:Math.random()*W,y:Math.random()*H*0.5,
+    vx:4+Math.random()*4,vy:2+Math.random()*2,
+    life:1,tail:[]
+  });
+}
+setInterval(spawnShootingStar,3000);
 
-<!-- Proposal Button -->
+const fireflies=[];
+for(let i=0;i<25;i++){
+  fireflies.push({
+    x:Math.random()*W,y:Math.random()*H,
+    vx:(Math.random()-0.5)*0.7,vy:(Math.random()-0.5)*0.7,
+    r:2+Math.random()*2,alpha:0,
+    phase:Math.random()*Math.PI*2
+  });
+}
 
-<button class="love-btn">
+const meteors=[];
+let meteorTimer=0;
 
-    💍 Say Yes Forever
+function drawBg(t){
+  bgCtx.clearRect(0,0,W,H);
+  const grad=bgCtx.createRadialGradient(W/2,H/2,0,W/2,H/2,Math.max(W,H));
+  grad.addColorStop(0,'#0d0025');
+  grad.addColorStop(0.4,'#060015');
+  grad.addColorStop(1,'#020008');
+  bgCtx.fillStyle=grad;
+  bgCtx.fillRect(0,0,W,H);
 
-</button>
+  const g2=bgCtx.createRadialGradient(W*0.8,H*0.1,0,W*0.8,H*0.1,W*0.4);
+  g2.addColorStop(0,'rgba(74,0,128,0.15)');
+  g2.addColorStop(1,'transparent');
+  bgCtx.fillStyle=g2;
+  bgCtx.fillRect(0,0,W,H);
 
-    <!-- Romantic Couple -->
+  for(const s of stars){
+    s.twinkle+=s.speed;
+    s.alpha=0.4+0.6*Math.abs(Math.sin(s.twinkle));
+    bgCtx.beginPath();
+    bgCtx.arc(s.x,s.y,s.r,0,Math.PI*2);
+    bgCtx.fillStyle=`rgba(255,255,255,${s.alpha})`;
+    bgCtx.fill();
+    if(s.r>1.2){
+      bgCtx.beginPath();
+      bgCtx.arc(s.x,s.y,s.r*3,0,Math.PI*2);
+      bgCtx.fillStyle=`rgba(200,180,255,${s.alpha*0.1})`;
+      bgCtx.fill();
+    }
+  }
 
-<div class="couple">
-    💑
-</div>
+  for(let i=shootingStars.length-1;i>=0;i--){
+    const ss=shootingStars[i];
+    ss.tail.push({x:ss.x,y:ss.y,a:ss.life});
+    if(ss.tail.length>20)ss.tail.shift();
+    ss.x+=ss.vx;ss.y+=ss.vy;ss.life-=0.025;
+    if(ss.life<=0){shootingStars.splice(i,1);continue;}
+    for(let j=0;j<ss.tail.length;j++){
+      const tp=ss.tail[j];
+      const prog=j/ss.tail.length;
+      bgCtx.beginPath();
+      bgCtx.arc(tp.x,tp.y,1.5*prog,0,Math.PI*2);
+      bgCtx.fillStyle=`rgba(255,255,200,${tp.a*prog*0.8})`;
+      bgCtx.fill();
+    }
+  }
+}
 
+function drawFx(t){
+  fxCtx.clearRect(0,0,W,H);
+  const now=Date.now();
+  if(now-meteorTimer>7000){
+    meteorTimer=now;
+    meteors.push({
+      x:Math.random()*W,y:0,
+      vx:-2-Math.random()*3,vy:3+Math.random()*3,
+      life:1,len:80+Math.random()*60
+    });
+  }
+  for(let i=meteors.length-1;i>=0;i--){
+    const m=meteors[i];
+    m.x+=m.vx;m.y+=m.vy;m.life-=0.012;
+    if(m.life<=0||m.y>H){meteors.splice(i,1);continue;}
+    const grad=fxCtx.createLinearGradient(m.x,m.y,m.x-m.vx*10,m.y-m.vy*10);
+    grad.addColorStop(0,`rgba(255,220,180,${m.life})`);
+    grad.addColorStop(1,'transparent');
+    fxCtx.strokeStyle=grad;
+    fxCtx.lineWidth=2;
+    fxCtx.beginPath();
+    fxCtx.moveTo(m.x,m.y);
+    fxCtx.lineTo(m.x-m.vx*15,m.y-m.vy*15);
+    fxCtx.stroke();
+  }
 
+  const ft=t*0.001;
+  for(const ff of fireflies){
+    ff.phase+=0.02;
+    ff.x+=ff.vx+Math.sin(ff.phase*0.7)*0.3;
+    ff.y+=ff.vy+Math.cos(ff.phase*0.5)*0.3;
+    if(ff.x<0)ff.x=W;if(ff.x>W)ff.x=0;
+    if(ff.y<0)ff.y=H;if(ff.y>H)ff.y=0;
+    ff.alpha=0.3+0.7*Math.abs(Math.sin(ff.phase));
+    fxCtx.beginPath();
+    fxCtx.arc(ff.x,ff.y,ff.r,0,Math.PI*2);
+    fxCtx.fillStyle=`rgba(200,255,150,${ff.alpha*0.8})`;
+    fxCtx.fill();
+    fxCtx.beginPath();
+    fxCtx.arc(ff.x,ff.y,ff.r*3,0,Math.PI*2);
+    fxCtx.fillStyle=`rgba(180,255,100,${ff.alpha*0.15})`;
+    fxCtx.fill();
+  }
+}
 
-<!-- Hanging Lanterns -->
+let rafT=0;
+function loop(t){
+  rafT=t;
+  drawBg(t);
+  drawFx(t);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
 
-<div class="lantern" 
-     style="left:12%; animation-delay:0s;">
-</div>
+function createFloatingHeart(){
+  const el=document.createElement('div');
+  const size=20+Math.random()*30;
+  const hearts=['❤️','💕','💖','💗','💓','💝','💘','🌸'];
+  el.textContent=hearts[Math.floor(Math.random()*hearts.length)];
+  el.style.cssText=`
+    position:absolute;font-size:${size}px;left:${Math.random()*100}%;
+    bottom:-60px;opacity:0;pointer-events:none;
+    animation:floatUp ${6+Math.random()*6}s linear forwards;
+    animation-delay:${Math.random()*3}s;
+  `;
+  document.getElementById('hearts-container').appendChild(el);
+  setTimeout(()=>el.remove(),12000);
+}
 
+const fhStyle=document.createElement('style');
+fhStyle.textContent=`@keyframes floatUp{0%{opacity:0;transform:translateY(0) rotate(0deg);}10%{opacity:0.8;}90%{opacity:0.4;}100%{opacity:0;transform:translateY(-${window.innerHeight+100}px) rotate(${(Math.random()-0.5)*60}deg);}}`;
+document.head.appendChild(fhStyle);
+setInterval(createFloatingHeart,400);
 
-<div class="lantern" 
-     style="left:35%; animation-delay:1s;">
-</div>
+function createPetal(){
+  const el=document.createElement('div');
+  const petals=['🌸','🌺','🌷','🏵️'];
+  el.textContent=petals[Math.floor(Math.random()*petals.length)];
+  const size=16+Math.random()*20;
+  el.style.cssText=`
+    position:absolute;font-size:${size}px;left:${Math.random()*100}%;
+    top:-40px;pointer-events:none;
+    animation:petalFall ${8+Math.random()*6}s linear forwards;
+    animation-delay:${Math.random()*5}s;
+  `;
+  document.getElementById('petals-container').appendChild(el);
+  setTimeout(()=>el.remove(),14000);
+}
 
+const pStyle=document.createElement('style');
+pStyle.textContent=`@keyframes petalFall{0%{transform:translateY(0) rotate(0deg) translateX(0);}25%{transform:translateY(${window.innerHeight*0.3}px) rotate(90deg) translateX(30px);}50%{transform:translateY(${window.innerHeight*0.6}px) rotate(180deg) translateX(-20px);}75%{transform:translateY(${window.innerHeight*0.8}px) rotate(270deg) translateX(15px);}100%{transform:translateY(${window.innerHeight+80}px) rotate(360deg) translateX(0);}}`;
+document.head.appendChild(pStyle);
+setInterval(createPetal,600);
 
-<div class="lantern" 
-     style="left:65%; animation-delay:0.5s;">
-</div>
+const typewriterMsgs=[
+  "Tum meri zindagi ki sabse sundar nazm ho...",
+  "Har raat tum sapno mein aate ho...",
+  "Tumhare bina yeh duniya adhuri si lagti hai...",
+  "Sirf tumse pyaar karta/karti hoon, hamesha...",
+  "Tumhari muskaan meri taaqat hai...",
+  "Tum ho toh sab kuch hai, tum nahi toh kuch nahi...",
+  "Dil ne kaha hai — Tum hi ho woh khaas insaan..."
+];
+let twIdx=0,twChar=0,twTyping=true;
+const twEl=document.getElementById('tw-text');
+function typeNext(){
+  const msg=typewriterMsgs[twIdx];
+  if(twTyping){
+    if(twChar<msg.length){twEl.textContent=msg.slice(0,++twChar);setTimeout(typeNext,60);}
+    else{twTyping=false;setTimeout(typeNext,2500);}
+  }else{
+    if(twChar>0){twEl.textContent=msg.slice(0,--twChar);setTimeout(typeNext,30);}
+    else{twTyping=true;twIdx=(twIdx+1)%typewriterMsgs.length;setTimeout(typeNext,400);}
+  }
+}
+setTimeout(typeNext,1800);
 
+const quotes=[
+  {text:"Tumhari ek muskaan meri poori duniya roshan kar deti hai...",author:"— Dil Se"},
+  {text:"Pyaar wo nahi jo ek baar ho jaye, pyaar wo hai jo har roz badhe...",author:"— Ehsaas"},
+  {text:"Tum ho toh lagta hai zindagi jeene ka maza hai...",author:"— Ruhaniyat"},
+  {text:"Dil ki dhadkan mein sirf tera naam hai...",author:"— Mohabbat"},
+  {text:"Jo teri aankh ka taara ho jaye, woh hoon main...",author:"— Aarzoo"},
+  {text:"Teri hansi meri sabse pyaari dhun hai...",author:"— Dhadkan"}
+];
+let qIdx=0;
+const qText=document.getElementById('quote-text');
+const qAuth=document.getElementById('quote-author');
+setInterval(()=>{
+  qText.style.opacity='0';
+  setTimeout(()=>{
+    qIdx=(qIdx+1)%quotes.length;
+    qText.textContent=quotes[qIdx].text;
+    qAuth.textContent=quotes[qIdx].author;
+    qText.style.transition='opacity 1s';
+    qText.style.opacity='1';
+  },600);
+},5000);
 
-<div class="lantern" 
-     style="left:85%; animation-delay:1.5s;">
-</div>
+const meetDate=new Date(Date.now()-60*24*60*60*1000);
+function updateTimer(){
+  const now=new Date();
+  const diff=now-meetDate;
+  const days=Math.floor(diff/(1000*60*60*24));
+  const hours=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  document.getElementById('days-count').textContent=days;
+  document.getElementById('hours-count').textContent=hours;
+}
+updateTimer();
+setInterval(updateTimer,60000);
 
+function escapeBtn(btn){
+  const rect=btn.getBoundingClientRect();
+  const bw=window.innerWidth,bh=window.innerHeight;
+  let nx=Math.random()*(bw-120);
+  let ny=Math.random()*(bh-60);
+  nx=Math.max(10,Math.min(bw-btn.offsetWidth-10,nx));
+  ny=Math.max(10,Math.min(bh-btn.offsetHeight-10,ny));
+  btn.style.position='fixed';btn.style.left=nx+'px';btn.style.top=ny+'px';btn.style.zIndex='9999';
+}
 
+function showToast(msg,dur=3000){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),dur);
+}
 
-<!-- Rose Garden -->
+const fwCanvas=document.getElementById('canvas-fireworks');
+const fwCtx=fwCanvas.getContext('2d');
+fwCanvas.width=window.innerWidth;fwCanvas.height=window.innerHeight;
+const fwParticles=[];
+function createFirework(x,y){
+  const colors=['#ff6b9d','#ffd700','#a855f7','#ff4081','#4fc3f7','#aed581'];
+  const n=80+Math.random()*40;
+  for(let i=0;i<n;i++){
+    const ang=Math.random()*Math.PI*2;
+    const spd=4+Math.random()*8;
+    fwParticles.push({
+      x,y,vx:Math.cos(ang)*spd,vy:Math.sin(ang)*spd,
+      life:1,color:colors[Math.floor(Math.random()*colors.length)],
+      r:2+Math.random()*3,gravity:0.12
+    });
+  }
+}
+function animFW(){
+  fwCtx.fillStyle='rgba(0,0,0,0.18)';
+  fwCtx.fillRect(0,0,fwCanvas.width,fwCanvas.height);
+  for(let i=fwParticles.length-1;i>=0;i--){
+    const p=fwParticles[i];
+    p.x+=p.vx;p.y+=p.vy;p.vy+=p.gravity;
+    p.vx*=0.97;p.life-=0.018;
+    if(p.life<=0){fwParticles.splice(i,1);continue;}
+    fwCtx.beginPath();
+    fwCtx.arc(p.x,p.y,p.r*p.life,0,Math.PI*2);
+    fwCtx.fillStyle=p.color;
+    fwCtx.globalAlpha=p.life;
+    fwCtx.fill();
+    fwCtx.globalAlpha=1;
+  }
+  requestAnimationFrame(animFW);
+}
+animFW();
 
-<div class="rose-garden">
+function launchFireworks(dur=5000){
+  fwCanvas.style.display='block';
+  const end=Date.now()+dur;
+  const iv=setInterval(()=>{
+    if(Date.now()>end){clearInterval(iv);setTimeout(()=>fwCanvas.style.display='none',2000);return;}
+    createFirework(Math.random()*window.innerWidth,Math.random()*window.innerHeight*0.7);
+  },180);
+}
 
-    <span class="rose" style="left:5%;">🌹</span>
+function createConfetti(){
+  const colors=['#ff6b9d','#ffd700','#a855f7','#4fc3f7','#aed581','#ff4081'];
+  for(let i=0;i<80;i++){
+    const el=document.createElement('div');
+    const color=colors[Math.floor(Math.random()*colors.length)];
+    el.style.cssText=`position:fixed;width:${6+Math.random()*8}px;height:${6+Math.random()*8}px;
+      background:${color};left:${Math.random()*100}%;top:-20px;z-index:99990;border-radius:${Math.random()>0.5?'50%':'2px'};
+      animation:confettiFall ${3+Math.random()*3}s linear forwards;animation-delay:${Math.random()*2}s;`;
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),6000);
+  }
+  const cs=document.createElement('style');
+  if(!document.querySelector('#conf-style')){
+    cs.id='conf-style';
+    cs.textContent=`@keyframes confettiFall{0%{transform:translateY(0) rotate(0deg);opacity:1;}100%{transform:translateY(${window.innerHeight+50}px) rotate(${720*Math.sign(Math.random()-0.5)}deg);opacity:0;}}`;
+    document.head.appendChild(cs);
+  }
+}
 
-    <span class="rose" style="left:15%;">🌹</span>
+function createBalloons(){
+  const bColors=['#ff6b9d','#ffd700','#a855f7','#4fc3f7'];
+  for(let i=0;i<12;i++){
+    const el=document.createElement('div');
+    const col=bColors[Math.floor(Math.random()*bColors.length)];
+    el.style.cssText=`position:fixed;width:40px;height:50px;background:${col};border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;
+      left:${Math.random()*90}%;bottom:-80px;z-index:99985;
+      animation:balloonRise ${8+Math.random()*6}s ease-in forwards;animation-delay:${Math.random()*3}s;
+      box-shadow:inset -5px -5px 12px rgba(0,0,0,0.2);`;
+    const str=document.createElement('div');
+    str.style.cssText=`position:absolute;bottom:-15px;left:50%;width:1px;height:15px;background:rgba(255,255,255,0.4);transform:translateX(-50%);`;
+    el.appendChild(str);
+    document.getElementById('balloons-container').appendChild(el);
+    setTimeout(()=>el.remove(),14000);
+  }
+  const bs=document.createElement('style');
+  if(!document.querySelector('#balloon-style')){
+    bs.id='balloon-style';
+    bs.textContent=`@keyframes balloonRise{0%{transform:translateY(0) rotate(-5deg);}50%{transform:translateY(-${window.innerHeight*0.6}px) rotate(5deg);}100%{transform:translateY(-${window.innerHeight+100}px) rotate(-3deg);}}`;
+    document.head.appendChild(bs);
+  }
+}
 
-    <span class="rose" style="left:25%;">🌹</span>
+function heartRain(){
+  for(let i=0;i<30;i++){
+    const el=document.createElement('div');
+    el.textContent=['❤️','💕','💖','💗'][Math.floor(Math.random()*4)];
+    const size=20+Math.random()*30;
+    el.style.cssText=`position:fixed;font-size:${size}px;left:${Math.random()*100}%;top:-50px;z-index:99987;pointer-events:none;
+      animation:hrainFall ${3+Math.random()*4}s linear forwards;animation-delay:${Math.random()*3}s;`;
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),8000);
+  }
+  const hrs=document.createElement('style');
+  if(!document.querySelector('#hrain-style')){
+    hrs.id='hrain-style';
+    hrs.textContent=`@keyframes hrainFall{0%{transform:translateY(0) rotate(0);opacity:1;}100%{transform:translateY(${window.innerHeight+100}px) rotate(${360}deg);opacity:0;}}`;
+    document.head.appendChild(hrs);
+  }
+}
 
-    <span class="rose" style="left:40%;">🌹</span>
+function onYes(){
+  document.getElementById('btn-row').innerHTML=`<div style="font-size:clamp(20px,4vw,32px);font-style:italic;color:var(--pink);text-shadow:0 0 20px var(--pink);animation:fadeInUp 1s both;padding:16px;">💍 Bahut Bahut Shukriya! ❤️</div>`;
+  showToast('💕 Tumne meri zindagi roshan kar di! 💕',5000);
+  launchFireworks(8000);
+  createConfetti();
+  createBalloons();
+  heartRain();
+  document.getElementById('heartbeat-ring').style.display='block';
+  startVizAnim();
+}
 
-    <span class="rose" style="left:55%;">🌹</span>
+function onNo(){
+  showToast('Ek baar soch lo... ❤️',2000);
+}
 
-    <span class="rose" style="left:70%;">🌹</span>
+const galTrack=document.getElementById('gal-track');
+const galDots=document.getElementById('gal-dots');
+const slides=document.querySelectorAll('.gallery-slide');
+let galIdx=0;
+slides.forEach((_,i)=>{
+  const d=document.createElement('div');
+  d.className='gallery-dot'+(i===0?' active':'');
+  d.addEventListener('click',()=>goSlide(i));
+  galDots.appendChild(d);
+});
+function goSlide(i){
+  galIdx=i;
+  galTrack.style.transform=`translateX(-${100*i}%)`;
+  document.querySelectorAll('.gallery-dot').forEach((d,j)=>d.classList.toggle('active',j===i));
+}
+document.getElementById('gal-prev').addEventListener('click',()=>goSlide((galIdx-1+slides.length)%slides.length));
+document.getElementById('gal-next').addEventListener('click',()=>goSlide((galIdx+1)%slides.length));
+setInterval(()=>goSlide((galIdx+1)%slides.length),4000);
 
-    <span class="rose" style="left:85%;">🌹</span>
+const songs=[
+  {title:'My Song',artist:'♪ Your Song ♪',emoji:'🎵',src:'song.mp3'},
+];
+let curSong=0,playing=false;
 
-    <span class="rose" style="left:95%;">🌹</span>
+const audio=new Audio();
+audio.loop=true;
+audio.volume=0.7;
+audio.src=songs[0].src;
+audio.preload='auto';
 
-</div>
+const vizEl=document.getElementById('visualizer');
+const vizBars=[];
+for(let i=0;i<18;i++){
+  const b=document.createElement('div');
+  b.className='viz-bar';
+  b.style.animationDelay=(i*0.06)+'s';
+  b.style.animationDuration=(0.3+Math.random()*0.4)+'s';
+  vizEl.appendChild(b);
+  vizBars.push(b);
+}
+
+function fmtTime(s){
+  if(isNaN(s)||s===Infinity)return'0:00';
+  const m=Math.floor(s/60),sec=Math.floor(s%60);
+  return`${m}:${sec.toString().padStart(2,'0')}`;
+}
+
+function updateProgress(){
+  const pct=audio.duration?((audio.currentTime/audio.duration)*100):0;
+  document.getElementById('progress-fill').style.width=pct+'%';
+  document.getElementById('progress-dot').style.left=pct+'%';
+  document.getElementById('cur-time').textContent=fmtTime(audio.currentTime);
+  document.getElementById('dur-time').textContent=fmtTime(audio.duration);
+}
+
+audio.addEventListener('timeupdate',updateProgress);
+audio.addEventListener('loadedmetadata',()=>{
+  document.getElementById('dur-time').textContent=fmtTime(audio.duration);
+  const s=songs[curSong];
+  document.getElementById('song-title').textContent=s.title;
+  document.getElementById('song-artist').textContent=s.artist;
+});
+audio.addEventListener('ended',()=>{
+  audio.currentTime=0;audio.play();
+});
+audio.addEventListener('error',()=>{
+  document.getElementById('song-title').textContent='song.mp3 not found';
+  document.getElementById('song-artist').textContent='Check file is in same folder';
+});
+
+function loadSong(i){
+  curSong=i;
+  const s=songs[i];
+  document.getElementById('album-art').textContent=s.emoji;
+  document.getElementById('song-title').textContent=s.title;
+  document.getElementById('song-artist').textContent=s.artist;
+  audio.src=s.src;
+  if(playing){audio.play();}
+  document.querySelectorAll('.playlist-item').forEach((el,j)=>el.classList.toggle('active',j===i));
+}
+
+function togglePlay(){
+  if(audio.paused){
+    audio.play().then(()=>{
+      playing=true;
+      document.getElementById('btn-play').textContent='⏸';
+      document.getElementById('album-art').classList.add('spinning');
+      vizBars.forEach(b=>b.classList.add('active'));
+    }).catch(()=>{
+      document.getElementById('song-title').textContent='Tap Play to start ▶';
+    });
+  }else{
+    audio.pause();
+    playing=false;
+    document.getElementById('btn-play').textContent='▶';
+    document.getElementById('album-art').classList.remove('spinning');
+    vizBars.forEach(b=>b.classList.remove('active'));
+  }
+}
+
+function startVizAnim(){vizBars.forEach(b=>b.classList.add('active'));}
+
+const pl=document.getElementById('playlist');
+songs.forEach((s,i)=>{
+  const item=document.createElement('div');
+  item.className='playlist-item'+(i===0?' active':'');
+  item.innerHTML=`<span class="pl-num">${i+1}</span><div class="pl-info"><div class="pl-title">${s.title}</div><div class="pl-art">${s.artist}</div></div><span class="pl-dur">♫</span>`;
+  item.addEventListener('click',()=>{loadSong(i);if(!playing){togglePlay();}});
+  pl.appendChild(item);
+});
+
+document.getElementById('btn-prev-song').addEventListener('click',()=>{audio.currentTime=0;});
+document.getElementById('btn-next-song').addEventListener('click',()=>{audio.currentTime=0;});
+const volSlider=document.getElementById('vol-slider');
+volSlider.value=0.7;
+volSlider.addEventListener('input',()=>{audio.volume=parseFloat(volSlider.value);});
+
+document.getElementById('progress-wrap').addEventListener('click',e=>{
+  if(!audio.duration)return;
+  const rect=e.currentTarget.getBoundingClientRect();
+  const pct=(e.clientX-rect.left)/rect.width;
+  audio.currentTime=pct*audio.duration;
+  updateProgress();
+});
+
+document.addEventListener('click',()=>{
+  if(!playing&&audio.paused&&audio.readyState>=2){
+    audio.play().then(()=>{
+      playing=true;
+      document.getElementById('btn-play').textContent='⏸';
+      document.getElementById('album-art').classList.add('spinning');
+      vizBars.forEach(b=>b.classList.add('active'));
+    }).catch(()=>{});
+  }
+},{once:true});
+
+let finaleShown=false;
+setTimeout(()=>{
+  if(!finaleShown){
+    finaleShown=true;
+    const f=document.getElementById('finale');
+    f.style.display='flex';
+    requestAnimationFrame(()=>{f.classList.add('show');});
+    launchFireworks(10000);
+    createConfetti();
+    createBalloons();
+    heartRain();
+    startVizAnim();
+  }
+},60000);
+
+document.getElementById('finale').addEventListener('click',function(e){
+  if(e.target===this)this.style.display='none';
+});
+
+window.addEventListener('scroll',()=>{
+  const scrollY=window.scrollY;
+  const moon=document.querySelector('.moon-container');
+  if(moon)moon.style.transform=`translateY(${scrollY*0.15}px)`;
+});
+
+window.onYes=onYes;
+window.onNo=onNo;
+window.escapeBtn=escapeBtn;
+window.togglePlay=togglePlay;
+
+})();
+</script>
+</body>
+</html>
