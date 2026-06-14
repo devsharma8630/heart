@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meri Banogi Kya ❤️ | Cinematic Love Story</title>
+
+
+<style>
+
+
+/* ===============================
+   RESET
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+/* ===============================
+   BODY - CINEMATIC NIGHT
+================================= */
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #27346b 0%,
+            #070b24 35%,
+            #01020d 80%,
+            #000000 100%
+        );
+
+}
+
+
+/* ===============================
+   MAIN SCENE
+================================= */
+
+.scene{
+
+    width:100%;
+    height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* ===============================
+   DEEP SPACE GLOW
+================================= */
+
+
+.space-glow{
+
+    position:absolute;
+
+    width:900px;
+    height:900px;
+
+    top:-300px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(120,140,255,.35),
+        transparent 70%
+    );
+
+
+    filter:blur(80px);
+
+    animation:
+    glowMove 12s ease-in-out infinite;
+
+}
+
+
+@keyframes glowMove{
+
+
+    0%,100%{
+
+        transform:
+        translateX(-50%)
+        scale(1);
+
+    }
+
+
+    50%{
+
+        transform:
+        translateX(-50%)
+        scale(1.2);
+
+    }
+
+}
+
+
+
+/* ===============================
+   MAGIC NEBULA CLOUDS
+================================= */
+
+
+.nebula{
+
+
+    position:absolute;
+
+
+    width:600px;
+    height:350px;
+
+
+    border-radius:50%;
+
+
+    filter:blur(90px);
+
+
+    animation:
+    floatNebula 15s infinite alternate;
+
+}
+
+
+
+/* Blue Nebula */
+
+.nebula.one{
+
+    top:100px;
+    left:10%;
+
+
+    background:
+    rgba(80,120,255,.30);
+
+}
+
+
+
+/* Pink Nebula */
+
+
+.nebula.two{
+
+    top:250px;
+    right:10%;
+
+
+    background:
+    rgba(255,80,180,.25);
+
+}
+
+
+
+/* Purple Nebula */
+
+
+.nebula.three{
+
+    bottom:120px;
+    left:35%;
+
+
+    background:
+    rgba(170,90,255,.20);
+
+}
+
+
+@keyframes floatNebula{
+
+
+    from{
+
+        transform:
+        translateY(0)
+        scale(1);
+
+    }
+
+
+    to{
+
+
+        transform:
+        translateY(-40px)
+        scale(1.1);
+
+    }
+
+}
+
+
+
+/* ===============================
+   GROUND DARK GRADIENT
+================================= */
+
+
+.horizon{
+
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+    height:35%;
+
+
+    background:
+    linear-gradient(
+        to top,
+        #000000,
+        transparent
+    );
+
+
+    z-index:2;
+
+}
+/* ===============================
+   ULTRA HD GLOWING MOON
+================================= */
+
+.moon{
+
+    position:absolute;
+
+    top:70px;
+    right:120px;
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle at 35% 35%,
+        #ffffff,
+        #f5f5f5 40%,
+        #d9d9d9 75%,
+        #bbbbbb
+    );
+
+    box-shadow:
+        0 0 60px white,
+        0 0 140px #7ec8ff,
+        0 0 250px #4488ff;
+
+    animation:
+        moonPulse 5s ease-in-out infinite;
+
+    z-index:3;
+}
+
+
+/* Moon Craters */
+
+.moon::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:35px;
+    height:35px;
+
+    top:45px;
+    left:45px;
+
+    border-radius:50%;
+
+    background:rgba(170,170,170,.4);
+
+    box-shadow:
+        55px 25px 0 rgba(180,180,180,.3),
+        25px 80px 0 rgba(150,150,150,.3),
+        85px 65px 0 rgba(180,180,180,.25);
+}
+
+
+
+@keyframes moonPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+
+/* ===============================
+   TWINKLING STARS
+================================= */
+
+
+.star{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 0 10px white;
+
+    animation:
+        twinkle 2.5s infinite;
+}
+
+
+@keyframes twinkle{
+
+    0%,100%{
+
+        opacity:.2;
+
+        transform:scale(.4);
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.7);
+
+    }
+
+}
+
+
+
+/* ===============================
+   SHOOTING STAR
+================================= */
+
+
+.shooting-star{
+
+    position:absolute;
+
+    width:160px;
+    height:3px;
+
+    background:
+    linear-gradient(
+        to right,
+        white,
+        transparent
+    );
+
+    border-radius:50px;
+
+    transform:rotate(-25deg);
+
+    filter:
+        drop-shadow(0 0 15px white);
+
+    animation:
+        shoot 5s linear infinite;
+
+    opacity:0;
+
+}
+
+
+
+@keyframes shoot{
+
+
+    0%{
+
+        top:-10%;
+        left:120%;
+
+        opacity:0;
+
+    }
+
+
+    10%{
+
+        opacity:1;
+
+    }
+
+
+    35%{
+
+        top:45%;
+        left:55%;
+
+        opacity:1;
+
+    }
+
+
+    50%,100%{
+
+        top:80%;
+        left:-20%;
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ===============================
+   MOBILE MOON
+================================= */
+
+
+@media(max-width:700px){
+
+
+    .moon{
+
+        width:100px;
+        height:100px;
+
+        right:30px;
+
+    }
+
+
+    .moon::before{
+
+        transform:scale(.6);
+
+        top:20px;
+        left:20px;
+
+    }
+
+
+    .shooting-star{
+
+        width:80px;
+
+    }
+
+}
+
+/* ===============================
+   CINEMATIC MOUNTAINS
+================================= */
+
+.mountains{
+
+    position:absolute;
+
+    bottom:22%;
+
+    width:100%;
+    height:250px;
+
+    z-index:3;
+
+}
+
+
+/* Mountain Layer 1 */
+
+.mountain1{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+    height:220px;
+
+    background:
+        linear-gradient(
+            to top,
+            #050505,
+            #141428
+        );
+
+    clip-path:
+        polygon(
+            0% 100%,
+            0% 60%,
+            10% 35%,
+            20% 65%,
+            35% 25%,
+            50% 70%,
+            65% 20%,
+            80% 60%,
+            90% 40%,
+            100% 70%,
+            100% 100%
+        );
+}
+
+
+/* Mountain Layer 2 */
+
+.mountain2{
+
+    position:absolute;
+
+    bottom:20px;
+
+    width:100%;
+    height:180px;
+
+    background:
+        linear-gradient(
+            to top,
+            #000000,
+            #202040
+        );
+
+    opacity:.75;
+
+    clip-path:
+        polygon(
+            0% 100%,
+            0% 80%,
+            15% 40%,
+            25% 65%,
+            45% 30%,
+            55% 70%,
+            75% 35%,
+            90% 70%,
+            100% 50%,
+            100% 100%
+        );
+}
+
+
+
+/* ===============================
+   MAGICAL LAKE
+================================= */
+
+
+.lake{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:25%;
+
+    z-index:2;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(60,100,255,.35),
+            #000814 70%
+        );
+
+    overflow:hidden;
+
+}
+
+
+/* Moon Reflection */
+
+.lake::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    width:180px;
+
+    height:100%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.5),
+            transparent
+        );
+
+    filter:
+        blur(35px);
+
+    animation:
+        waterGlow 5s ease-in-out infinite;
+
+}
+
+
+/* Water movement */
+
+.lake::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:200%;
+
+    height:100%;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.05) 10px,
+        transparent 20px
+    );
+
+    animation:
+        waves 6s linear infinite;
+
+}
+
+
+@keyframes waves{
+
+    from{
+
+        transform:
+        translateX(0);
+
+    }
+
+    to{
+
+        transform:
+        translateX(-50%);
+
+    }
+
+}
+
+
+/* Reflection animation */
+
+@keyframes waterGlow{
+
+    0%,100%{
+
+        opacity:.6;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* ===============================
+   CINEMATIC FOG
+================================= */
+
+
+.fog{
+
+    position:absolute;
+
+    bottom:15%;
+
+    width:100%;
+
+    height:150px;
+
+    z-index:4;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.15),
+            transparent 70%
+        );
+
+    filter:
+        blur(50px);
+
+    animation:
+        fogMove 10s ease-in-out infinite;
+
+}
+
+
+@keyframes fogMove{
+
+    0%,100%{
+
+        transform:
+        translateX(-60px);
+
+    }
+
+
+    50%{
+
+        transform:
+        translateX(60px);
+
+    }
+
+}
+
+/* ===============================
+   ROMANTIC COUPLE SILHOUETTE
+================================= */
+
+.couple{
+
+    position:absolute;
+
+    bottom:22%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:130px;
+
+    z-index:6;
+
+    filter:
+        drop-shadow(0 0 35px #ff66cc);
+
+    animation:
+        coupleBreathe 5s ease-in-out infinite;
+
+}
+
+
+@keyframes coupleBreathe{
+
+    0%,100%{
+
+        transform:
+        translateX(-50%)
+        scale(1);
+
+    }
+
+    50%{
+
+        transform:
+        translateX(-50%)
+        scale(1.05);
+
+    }
+
+}
+
+
+
+/* ===============================
+   HANGING LANTERNS
+================================= */
+
+.lantern{
+
+    position:absolute;
+
+    top:0;
+
+    width:45px;
+
+    height:65px;
+
+    border-radius:
+        25px 25px 15px 15px;
+
+    background:
+        linear-gradient(
+            #ffbb44,
+            #ff5500
+        );
+
+    box-shadow:
+        0 0 25px #ff9900,
+        0 0 60px #ff5500;
+
+    z-index:7;
+
+    animation:
+        lanternSwing 4s ease-in-out infinite;
+
+}
+
+
+/* Lantern Rope */
+
+.lantern::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:3px;
+
+    height:120px;
+
+    background:#777;
+
+    top:-120px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+@keyframes lanternSwing{
+
+    0%,100%{
+
+        transform:
+            rotate(-5deg);
+
+    }
+
+    50%{
+
+        transform:
+            rotate(5deg);
+
+    }
+
+}
+
+
+
+/* ===============================
+   ROSE GARDEN
+================================= */
+
+
+.rose-garden{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:80px;
+
+    z-index:8;
+
+    font-size:28px;
+
+    overflow:hidden;
+
+}
+
+
+.rose{
+
+    position:absolute;
+
+    bottom:0;
+
+    animation:
+        roseMove 3s ease-in-out infinite;
+
+}
+
+
+@keyframes roseMove{
+
+    0%,100%{
+
+        transform:
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-8px);
+
+    }
+
+}
+
+
+
+/* ===============================
+   FIREFLIES
+================================= */
+
+
+.firefly{
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#ffee66;
+
+    box-shadow:
+        0 0 15px #ffee66,
+        0 0 35px #ffdd33;
+
+    z-index:5;
+
+    animation:
+        fireflyGlow 2s infinite;
+
+}
+
+
+@keyframes fireflyGlow{
+
+    0%,100%{
+
+        opacity:.2;
+
+        transform:
+            scale(.5);
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+        transform:
+            scale(1.5);
+
+    }
+
+}
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================= */
+
+
+@media(max-width:700px){
+
+
+    .couple{
+
+        font-size:80px;
+
+        bottom:25%;
+
+    }
+
+
+    .lantern{
+
+        width:30px;
+
+        height:45px;
+
+    }
+
+
+    .rose-garden{
+
+        font-size:20px;
+
+    }
+
+}
+
+/* ===============================
+   CINEMATIC LOVE TITLE
+================================= */
+
+.title{
+
+    position:absolute;
+
+    top:32%;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    z-index:10;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    font-size:65px;
+
+    font-weight:800;
+
+    letter-spacing:4px;
+
+    text-shadow:
+        0 0 15px #ff66cc,
+        0 0 35px #ff3399,
+        0 0 70px #ff0066;
+
+    animation:
+        titleGlow 3s ease-in-out infinite;
+
+}
+
+
+@keyframes titleGlow{
+
+    0%,100%{
+
+        filter:brightness(1);
+
+        transform:
+            translateX(-50%)
+            scale(1);
+
+    }
+
+
+    50%{
+
+        filter:brightness(1.4);
+
+        transform:
+            translateX(-50%)
+            scale(1.06);
+
+    }
+
+}
+
+
+
+/* ===============================
+   SUBTITLE
+================================= */
+
+.subtitle{
+
+    margin-top:18px;
+
+    color:#ffd7f0;
+
+    font-size:24px;
+
+    letter-spacing:2px;
+
+    text-shadow:
+        0 0 15px #ff99dd;
+
+}
+
+
+
+/* ===============================
+   LOVE QUOTES
+================================= */
+
+.quote{
+
+    position:absolute;
+
+    top:58%;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    width:80%;
+
+    text-align:center;
+
+    font-size:26px;
+
+    color:#ffffff;
+
+    z-index:10;
+
+    text-shadow:
+        0 0 18px #ff66cc;
+
+    opacity:0;
+
+    animation:
+        quoteFade 6s infinite;
+
+}
+
+
+@keyframes quoteFade{
+
+
+    0%,100%{
+
+        opacity:0;
+
+        transform:
+            translateX(-50%)
+            translateY(20px);
+
+    }
+
+
+    20%,80%{
+
+        opacity:1;
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+
+    }
+
+}
+
+
+
+/* ===============================
+   FLOATING HEARTS
+================================= */
+
+.heart{
+
+    position:absolute;
+
+    bottom:-60px;
+
+    font-size:30px;
+
+    z-index:9;
+
+    animation:
+        heartFloat linear forwards;
+
+}
+
+
+@keyframes heartFloat{
+
+
+    from{
+
+        transform:
+            translateY(0)
+            scale(.6);
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:
+            translateY(-120vh)
+            rotate(360deg)
+            scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ===============================
+   ROMANTIC BUTTON
+================================= */
+
+.love-btn{
+
+    position:absolute;
+
+    bottom:120px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #ff0088,
+            #ff66cc
+        );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    z-index:12;
+
+    box-shadow:
+        0 0 20px #ff0088,
+        0 0 50px #ff66cc;
+
+    transition:.4s;
+
+}
+
+
+.love-btn:hover{
+
+    transform:
+        translateX(-50%)
+        scale(1.1);
+
+    box-shadow:
+        0 0 35px #ff66cc,
+        0 0 80px #ff0088;
+
+}
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media(max-width:700px){
+
+
+    .title{
+
+        font-size:35px;
+
+        width:90%;
+
+    }
+
+
+    .subtitle{
+
+        font-size:16px;
+
+    }
+
+
+    .quote{
+
+        font-size:18px;
+
+        width:90%;
+
+        top:60%;
+
+    }
+
+
+    .love-btn{
+
+        font-size:14px;
+
+        padding:12px 25px;
+
+    }
+
+}
+
+/* ===============================
+   PREMIUM GLASS MUSIC PLAYER
+================================= */
+
+.music-player{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:420px;
+
+    padding:18px 25px;
+
+    border-radius:25px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(20px);
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 0 40px rgba(255,100,180,.6);
+
+    z-index:20;
+
+    text-align:center;
+
+}
+
+
+/* Song Name */
+
+.song-title{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+    letter-spacing:1px;
+
+    text-shadow:
+        0 0 12px #ff66cc;
+
+}
+
+
+
+/* ===============================
+   AUDIO VISUALIZER
+================================= */
+
+
+.visualizer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    gap:5px;
+
+    height:45px;
+
+    margin-bottom:15px;
+
+}
+
+
+.bar{
+
+    width:6px;
+
+    height:20px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            #ff66cc,
+            #ffffff
+        );
+
+    animation:
+        musicBounce 1s infinite ease-in-out;
+
+}
+
+
+@keyframes musicBounce{
+
+    0%,100%{
+
+        height:15px;
+
+    }
+
+
+    50%{
+
+        height:45px;
+
+    }
+
+}
+
+
+
+/* ===============================
+   PROGRESS BAR
+================================= */
+
+
+.progress-container{
+
+    width:100%;
+
+    height:8px;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,255,255,.25);
+
+    overflow:hidden;
+
+    margin:15px 0;
+
+}
+
+
+.progress{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff0088,
+            #ff99cc
+        );
+
+    box-shadow:
+        0 0 20px #ff0088;
+
+}
+
+
+
+/* ===============================
+   PLAY BUTTON
+================================= */
+
+
+.play-btn{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:22px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #ff0088,
+            #ff66cc
+        );
+
+    box-shadow:
+        0 0 25px #ff3399;
+
+    transition:.4s;
+
+}
+
+
+.play-btn:hover{
+
+    transform:scale(1.15);
+
+    box-shadow:
+        0 0 50px #ff66cc;
+
+}
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================= */
+
+
+@media(max-width:700px){
+
+
+    .music-player{
+
+        width:90%;
+
+        bottom:20px;
+
+        padding:15px;
+
+    }
+
+
+    .song-title{
+
+        font-size:15px;
+
+    }
+
+
+    .play-btn{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:18px;
+
+    }
+
+
+    .bar{
+
+        width:5px;
+
+    }
+
+}
+/* ===============================
+   AURORA LIGHTS
+================================= */
+
+.aurora{
+
+    position:absolute;
+
+    top:-200px;
+    left:50%;
+
+    width:900px;
+    height:500px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,255,255,.25),
+            rgba(255,0,255,.25),
+            rgba(100,255,100,.25)
+        );
+
+    filter:blur(80px);
+
+    z-index:1;
+
+    animation:
+        auroraMove 12s ease-in-out infinite;
+
+}
+
+
+@keyframes auroraMove{
+
+    0%,100%{
+
+        transform:
+            translateX(-50%)
+            rotate(-5deg);
+
+    }
+
+    50%{
+
+        transform:
+            translateX(-50%)
+            rotate(5deg);
+
+    }
+
+}
+
+
+/* ===============================
+   SPARKLES
+================================= */
+
+.sparkle{
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+        0 0 15px white,
+        0 0 30px #ffccff;
+
+    animation:
+        sparkleMove 3s linear forwards;
+
+}
+
+
+@keyframes sparkleMove{
+
+    from{
+
+        transform:
+            translateY(0)
+            scale(.5);
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:
+            translateY(-150px)
+            scale(2);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* ===============================
+   FINAL PROPOSAL MESSAGE
+================================= */
+
+.final-message{
+
+    position:absolute;
+
+    top:40%;
+
+    left:50%;
+
+    transform:
+        translate(-50%, -50%)
+        scale(.5);
+
+    width:90%;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:70px;
+
+    font-weight:bold;
+
+    z-index:50;
+
+    opacity:0;
+
+    text-shadow:
+        0 0 20px #ff66cc,
+        0 0 60px #ff0088;
+
+    animation:
+        proposalShow 8s forwards;
+
+    animation-delay:60s;
+
+}
+
+
+@keyframes proposalShow{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translate(-50%, -50%)
+            scale(.5);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+    }
+
+}
+
+
+/* ===============================
+   MOBILE FINAL FIX
+================================= */
+
+@media(max-width:700px){
+
+    .final-message{
+
+        font-size:35px;
+
+    }
+
+
+    .aurora{
+
+        width:500px;
+
+    }
+
+}</style>
+
+
+</head>
+<script>
+
+
+/* ===============================
+   CREATE 300 TWINKLING STARS
+================================= */
+
+for(let i = 0; i < 300; i++){
+
+    let star = document.createElement("div");
+
+    star.className = "star";
+
+    let size = Math.random() * 3;
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+
+    star.style.left =
+        Math.random() * 100 + "vw";
+
+    star.style.top =
+        Math.random() * 100 + "vh";
+
+    star.style.animationDelay =
+        Math.random() * 5 + "s";
+
+
+    document.querySelector(".scene")
+    .appendChild(star);
+
+}
+
+
+
+/* ===============================
+   FLOATING HEARTS
+================================= */
+
+setInterval(() => {
+
+
+    let heart = document.createElement("div");
+
+
+    heart.className = "heart";
+
+
+    heart.innerHTML = "💖";
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+
+    document.querySelector(".scene")
+    .appendChild(heart);
+
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 9000);
+
+
+}, 600);
+
+
+
+
+
+/* ===============================
+   GLOWING FIREFLIES
+================================= */
+
+
+setInterval(() => {
+
+
+    let firefly =
+        document.createElement("div");
+
+
+    firefly.className =
+        "firefly";
+
+
+    firefly.style.left =
+        Math.random() * 100 + "vw";
+
+
+    firefly.style.top =
+        (40 + Math.random() * 40)
+        + "vh";
+
+
+    document.querySelector(".scene")
+    .appendChild(firefly);
+
+
+    setTimeout(() => {
+
+
+        firefly.remove();
+
+
+    }, 5000);
+
+
+}, 500);
+
+
+
+
+
+/* ===============================
+   MUSIC PLAYER CONTROLS
+================================= */
+
+
+const song =
+document.getElementById("song");
+
+
+const button =
+document.querySelector(".play-btn");
+
+
+
+function toggleMusic(){
+
+
+    if(song.paused){
+
+
+        song.play();
+
+
+        button.innerHTML = "❚❚";
+
+
+    }
+
+    else{
+
+
+        song.pause();
+
+
+        button.innerHTML = "▶";
+
+
+    }
+
+}
+
+
+
+
+
+/* ===============================
+   MUSIC PROGRESS BAR
+================================= */
+
+
+const progress =
+document.getElementById("progress");
+
+
+
+song.addEventListener("timeupdate", () => {
+
+
+    let percent =
+    (song.currentTime / song.duration)
+    * 100;
+
+
+    progress.style.width =
+    percent + "%";
+
+
+});
+
+
+
+
+
+/* ===============================
+   ROMANTIC QUOTES CHANGER
+================================= */
+
+
+const quotes = [
+
+"Every heartbeat whispers your name ❤️",
+
+"Under this moon, I found my forever 🌙",
+
+"Your smile is my favorite melody ✨",
+
+"My universe begins and ends with you 💕",
+
+"Will you hold my hand forever? 💍",
+
+"Every star in the sky tells our story ⭐"
+
+];
+
+
+
+const quote =
+document.getElementById("quote");
+
+
+let index = 0;
+
+
+setInterval(() => {
+
+
+    quote.style.opacity = 0;
+
+
+
+    setTimeout(() => {
+
+
+        index++;
+
+
+        if(index >= quotes.length){
+
+
+            index = 0;
+
+
+        }
+
+
+        quote.innerHTML =
+        quotes[index];
+
+
+        quote.style.opacity = 1;
+
+
+    }, 800);
+
+
+
+}, 6000);
+
+
+
+
+/* ===============================
+   AUTO PLAY EFFECT
+================================= */
+
+
+window.addEventListener("load", () => {
+
+
+    button.style.animation =
+    "titleGlow 2s infinite";
+
+
+});
+/* ===============================
+   MAGICAL SPARKLES
+================================= */
+
+setInterval(() => {
+
+
+    let sparkle =
+        document.createElement("div");
+
+
+    sparkle.className =
+        "sparkle";
+
+
+    sparkle.style.left =
+        Math.random()*100 + "vw";
+
+
+    sparkle.style.top =
+        (30 + Math.random()*60)
+        + "vh";
+
+
+    document.querySelector(".scene")
+    .appendChild(sparkle);
+
+
+    setTimeout(() => {
+
+        sparkle.remove();
+
+    }, 3000);
+
+
+}, 250);
+
+
+
+
+
+/* ===============================
+   EXTRA SHOOTING STARS
+================================= */
+
+setInterval(() => {
+
+
+    let shoot =
+        document.createElement("div");
+
+
+    shoot.className =
+        "shooting-star";
+
+
+    shoot.style.top =
+        Math.random()*40 + "vh";
+
+
+    shoot.style.left =
+        "110vw";
+
+
+    shoot.style.animationDuration =
+        (2 + Math.random()*3)
+        + "s";
+
+
+    document.querySelector(".scene")
+    .appendChild(shoot);
+
+
+    setTimeout(() => {
+
+        shoot.remove();
+
+    }, 5000);
+
+
+}, 8000);
+
+
+</script>
+
+
+<body>
+    
+
+    <div class="scene">
+        <!-- Aurora Lights -->
+
+<div class="aurora"></div>
+
+
+<!-- Final Proposal -->
+
+<div class="final-message">
+
+    💍 Will You Marry Me? ❤️
+
+</div>
+
+        <!-- Cinematic Mountains -->
+
+<div class="mountains">
+
+    <div class="mountain1"></div>
+
+    <div class="mountain2"></div>
+
+</div>
+
+
+<!-- Magical Moving Fog -->
+
+<div class="fog"></div>
+
+
+<!-- Lake Reflection -->
+
+<div class="lake"></div>
+
+    <!-- Ultra HD Moon -->
+<div class="moon"></div>
+
+
+<!-- Shooting Star -->
+<div class="shooting-star"></div>
+
+
+    <!-- Space Glow -->
+    <div class="space-glow"></div>
+
+
+    <!-- Cinematic Nebula -->
+    <div class="nebula one"></div>
+
+    <div class="nebula two"></div>
+
+    <div class="nebula three"></div>
+
+
+    <!-- Dark Horizon -->
+    <div class="horizon"></div>
+
+    <!-- Romantic Title -->
+
+<div class="title">
+
+    Meri Banogi Kya ❤️
+
+    <div class="subtitle">
+
+        A Love Story Written In The Stars ✨
+
+        <!-- Audio File -->
+
+<audio id="song">
+
+    <source 
+        src="song.mp3" 
+        type="audio/mp3">
+
+</audio>
+
+
+
+<!-- Premium Music Player -->
+
+<div class="music-player">
+
+
+    <div class="song-title">
+
+        🎵 Meri Banogi Kya - Rito Riba
+
+    </div>
+
+
+
+    <!-- Audio Visualizer -->
+
+    <div class="visualizer" id="visualizer">
+
+
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+
+
+    </div>
+
+
+
+    <!-- Progress -->
+
+    <div class="progress-container">
+
+        <div class="progress" id="progress">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Play Button -->
+
+    <button 
+        class="play-btn"
+        onclick="toggleMusic()">
+
+        ▶
+
+    </button>
+
+
+</div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Romantic Quote -->
+
+<div class="quote" id="quote">
+
+    "Every heartbeat whispers your name ❤️"
+
+</div>
+
+
+
+<!-- Proposal Button -->
+
+<button class="love-btn">
+
+    💍 Say Yes Forever
+
+</button>
+
+    <!-- Romantic Couple -->
+
+<div class="couple">
+    💑
+</div>
+
+
+
+<!-- Hanging Lanterns -->
+
+<div class="lantern" 
+     style="left:12%; animation-delay:0s;">
+</div>
+
+
+<div class="lantern" 
+     style="left:35%; animation-delay:1s;">
+</div>
+
+
+<div class="lantern" 
+     style="left:65%; animation-delay:0.5s;">
+</div>
+
+
+<div class="lantern" 
+     style="left:85%; animation-delay:1.5s;">
+</div>
+
+
+
+<!-- Rose Garden -->
+
+<div class="rose-garden">
+
+    <span class="rose" style="left:5%;">🌹</span>
+
+    <span class="rose" style="left:15%;">🌹</span>
+
+    <span class="rose" style="left:25%;">🌹</span>
+
+    <span class="rose" style="left:40%;">🌹</span>
+
+    <span class="rose" style="left:55%;">🌹</span>
+
+    <span class="rose" style="left:70%;">🌹</span>
+
+    <span class="rose" style="left:85%;">🌹</span>
+
+    <span class="rose" style="left:95%;">🌹</span>
+
+</div>
